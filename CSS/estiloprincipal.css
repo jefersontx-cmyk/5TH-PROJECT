@@ -14,7 +14,7 @@
 
 /* body es todo el cuerpo de la página */
 body {
-    background-color: #0A0A0A; /* Fondo negro profundo — color principal de TX */
+    background-color: #2b2626; /* Fondo negro profundo — color principal de TX */
     color: #FFFFFF;             /* Color de texto base — blanco */
     font-family: Arial, sans-serif; /* Tipo de letra por defecto */
 }
@@ -27,21 +27,21 @@ body {
 ======================== */
 
 .header {
-    background-color: #1E1E1E;        /* Fondo gris oscuro del rectángulo */
-    width: 100%;                       /* Ocupa todo el ancho de la pantalla */
-    height: 160px;                     /* Altura del rectángulo */
-    display: flex;                     /* Activa alineación flexible */
-    align-items: center;               /* Centra el contenido verticalmente */
-    justify-content: center;           /* Centra el contenido horizontalmente */
-    border-bottom: 3px solid #E60000; /* Línea roja abajo del header */
-    overflow: hidden;                  /* Recorta lo que se salga del rectángulo */
+    background-color: #1E1E1E;         /* 🎨 CAMBIA AQUÍ el color del rectángulo */
+    width: 100%;                        /* Ocupa todo el ancho de la pantalla — no tocar */
+    height: 120px;                      /* 📐 CAMBIA AQUÍ la altura del rectángulo (en px) */
+    display: flex;                      /* Activa alineación flexible — no tocar */
+    align-items: center;                /* Centra el contenido verticalmente — no tocar */
+    justify-content: center;            /* Centra el contenido horizontalmente — no tocar */
+    border-bottom: 3px solid #E60000;  /* 📏 CAMBIA AQUÍ el grosor y color de la línea roja */
+    overflow: hidden;                   /* Recorta lo que se salga del rectángulo — no tocar */
 }
 
 /* La imagen del logo TX dentro del header */
 .header-logo-img {
-    height: 90%;       /* Alto de la imagen — llena casi todo el rectángulo */
-    width: auto;         /* El ancho se ajusta solo sin deformar la imagen */
-    object-fit: contain; /* La imagen se adapta sin cortarse ni deformarse */
+    height: 140px;       /* 📐 CAMBIA AQUÍ el tamaño de la foto del logo (en px) */
+    width: auto;         /* El ancho se ajusta solo sin deformar la imagen — no tocar */
+    object-fit: contain; /* La imagen se adapta sin cortarse ni deformarse — no tocar */
 }
 
 
@@ -53,33 +53,33 @@ body {
 ======================== */
 
 .navbar {
-    background-color: #0A0A0A;        /* Fondo negro igual al body */
-    width: 100%;                       /* Ocupa todo el ancho */
-    padding: 16px 40px;               /* Espacio interno: 16px arriba/abajo, 40px a los lados */
-    border-bottom: 1px solid #2a2a2a; /* Línea gris muy sutil abajo de la nav */
+    background-color: #0A0A0A;         /* 🎨 CAMBIA AQUÍ el color de fondo de la barra de nav */
+    width: 100%;                        /* Ocupa todo el ancho — no tocar */
+    padding: 20px 40px;                /* 📐 CAMBIA AQUÍ el espacio interno de la nav (arriba/abajo y lados) */
+    border-bottom: 3px solid #be2525;  /* 📏 CAMBIA AQUÍ el grosor y color de la línea abajo de la nav */
 }
 
 /* ul es la lista de links — la ponemos en fila horizontal */
 .nav-links {
-    list-style: none;        /* Quitamos los puntos de la lista */
-    display: flex;           /* Pone los links en fila */
-    gap: 40px;               /* Espacio entre cada link */
-    justify-content: center; /* Centra todos los links */
+    list-style: none;        /* Quita los puntos de la lista — no tocar */
+    display: flex;           /* Pone los links en fila — no tocar */
+    gap: 40px;               /* 📐 CAMBIA AQUÍ el espacio entre cada link del menú */
+    justify-content: center; /* Centra todos los links — no tocar */
 }
 
 /* Cada link individual de la navegación */
 .nav-links a {
-    color: #FFFFFF;            /* Letras blancas */
-    text-decoration: none;     /* Quita el subrayado de los links */
-    font-size: 14px;           /* Tamaño del texto */
-    letter-spacing: 3px;       /* Espacio entre letras — da efecto elegante */
-    text-transform: uppercase; /* Convierte el texto a MAYÚSCULAS automáticamente */
-    transition: color 0.3s;   /* Animación suave al pasar el mouse */
+    color: #FFFFFF;            /* 🎨 CAMBIA AQUÍ el color de las letras del menú */
+    text-decoration: none;     /* Quita el subrayado — no tocar */
+    font-size: 14px;           /* 📐 CAMBIA AQUÍ el tamaño de las letras del menú */
+    letter-spacing: 3px;       /* 📐 CAMBIA AQUÍ el espacio entre letras del menú */
+    text-transform: uppercase; /* Convierte a mayúsculas automáticamente — no tocar */
+    transition: color 0.3s;    /* Animación suave al pasar el mouse — no tocar */
 }
 
 /* Efecto cuando el mouse pasa encima de un link */
 .nav-links a:hover {
-    color: #E60000; /* Cambia a rojo TX al pasar el mouse */
+    color: #E60000; /* 🎨 CAMBIA AQUÍ el color al pasar el mouse por encima */
 }
 
 
@@ -91,58 +91,58 @@ body {
 ======================== */
 
 .slogan {
-    position: relative;              /* Necesario para posicionar el logo de fondo */
-    min-height: 500px;               /* Altura mínima de la sección */
-    display: flex;                   /* Activa alineación flexible */
-    align-items: center;             /* Centra el contenido verticalmente */
-    justify-content: center;         /* Centra el contenido horizontalmente */
-    padding: 80px 40px;             /* Espacio interno generoso */
-    overflow: hidden;                /* Oculta lo que se salga de esta sección */
-    background-image: url("images/fondo.png"); /* Imagen de fondo — solo en esta sección */
-    background-size: cover;          /* La imagen cubre toda la sección */
-    background-position: center;     /* La imagen se centra */
+    position: relative;                        /* No tocar */
+    min-height: 700px;                         /* 📐 CAMBIA AQUÍ la altura de esta sección (en px) */
+    display: flex;                             /* No tocar */
+    align-items: center;                       /* No tocar */
+    justify-content: center;                   /* No tocar */
+    padding: 80px 40px;                        /* 📐 CAMBIA AQUÍ el espacio interno de la sección */
+    overflow: hidden;                          /* No tocar */
+    background-image: url("images/fondo.png"); /* 🖼️ CAMBIA AQUÍ la ruta de tu imagen de fondo */
+    background-size: cover;                    /* La imagen cubre toda la sección — no tocar */
+    background-position: center;               /* La imagen se centra — no tocar */
 }
 
 /* El TX gigante que se ve de fondo — es decorativo */
 .slogan-fondo {
-    position: absolute;  /* Lo saca del flujo normal y lo pone encima del fondo */
-    font-size: 300px;    /* Tamaño enorme para que ocupe todo el fondo */
-    font-weight: 900;    /* Negrita máxima */
-    color: #FFFFFF;      /* Color blanco */
-    opacity: 0.04;       /* Casi invisible — solo se intuye, no distrae */
-    letter-spacing: -10px; /* Letras más juntas para que se vea compacto */
-    user-select: none;   /* Evita que el usuario pueda seleccionar ese texto */
-    pointer-events: none; /* Evita que interfiera con los clicks */
+    position: absolute;    /* No tocar */
+    font-size: 300px;      /* 📐 CAMBIA AQUÍ el tamaño del TX decorativo de fondo */
+    font-weight: 900;      /* No tocar */
+    color: #FFFFFF;        /* 🎨 CAMBIA AQUÍ el color del TX decorativo de fondo */
+    opacity: 0.10;         /* 👁️ CAMBIA AQUÍ la transparencia del TX de fondo (0 = invisible, 1 = sólido) */
+    letter-spacing: -10px; /* No tocar */
+    user-select: none;     /* No tocar */
+    pointer-events: none;  /* No tocar */
 }
 
 /* El contenido real — el texto que el usuario lee */
 .slogan-contenido {
-    position: relative; /* Lo pone encima del logo de fondo */
-    text-align: center; /* Centra el texto */
-    z-index: 1;         /* Se asegura de que esté por encima del fondo */
+    position: relative; /* No tocar */
+    text-align: center; /* 📐 CAMBIA AQUÍ la alineación del texto: center, left o right */
+    z-index: 1;         /* No tocar */
 }
 
 /* El título principal del slogan */
 .slogan-contenido h1 {
-    font-size: 52px;           /* Tamaño grande e impactante */
-    font-weight: 900;          /* Negrita fuerte */
-    letter-spacing: 4px;       /* Espacio entre letras */
-    text-transform: uppercase; /* Todo en mayúsculas */
-    line-height: 1.2;          /* Separación entre líneas de texto */
-    margin-bottom: 24px;       /* Espacio abajo del título */
+    font-size: 52px;           /* 📐 CAMBIA AQUÍ el tamaño del título principal */
+    font-weight: 900;          /* 📐 CAMBIA AQUÍ el grosor de la letra (400=normal, 700=negrita, 900=máximo) */
+    letter-spacing: 4px;       /* 📐 CAMBIA AQUÍ el espacio entre letras del título */
+    text-transform: uppercase; /* Convierte a mayúsculas — no tocar */
+    line-height: 1.2;          /* No tocar */
+    margin-bottom: 24px;       /* 📐 CAMBIA AQUÍ el espacio entre el título y el párrafo */
 }
 
 /* La palabra INSTINTO en rojo para resaltar */
 .slogan-contenido h1 span {
-    color: #E60000; /* Rojo TX — acento de la marca */
+    color: #E60000; /* 🎨 CAMBIA AQUÍ el color de la palabra resaltada en el título */
 }
 
 /* El párrafo debajo del título */
 .slogan-contenido p {
-    font-size: 18px;     /* Tamaño mediano */
-    color: #D9D9D9;      /* Gris claro — no tan brillante como el blanco */
-    letter-spacing: 2px; /* Espacio entre letras */
-    font-style: italic;  /* Texto en cursiva para dar elegancia */
+    font-size: 18px;     /* 📐 CAMBIA AQUÍ el tamaño del párrafo */
+    color: #D9D9D9;      /* 🎨 CAMBIA AQUÍ el color del párrafo */
+    letter-spacing: 2px; /* 📐 CAMBIA AQUÍ el espacio entre letras del párrafo */
+    font-style: italic;  /* Cursiva — cámbialo a "normal" si no quieres cursiva */
 }
 
 
@@ -153,85 +153,78 @@ body {
 ======================== */
 
 .footer {
-    background-color: #1E1E1E;     /* Gris oscuro igual que el header */
-    border-top: 3px solid #E60000; /* Línea roja arriba — espejo del header */
-    padding: 30px 40px;            /* Espacio interno */
-    text-align: center;            /* Todo centrado */
-    display: flex;                 /* Activa alineación flexible */
-    flex-direction: column;        /* Apila los elementos en columna */
-    gap: 16px;                     /* Espacio entre el texto y los iconos */
+    background-color: #1E1E1E;     /* 🎨 CAMBIA AQUÍ el color de fondo del footer */
+    border-top: 3px solid #E60000; /* 📏 CAMBIA AQUÍ el grosor y color de la línea roja arriba */
+    padding: 30px 40px;            /* 📐 CAMBIA AQUÍ el espacio interno del footer */
+    text-align: center;            /* No tocar */
+    display: flex;                 /* No tocar */
+    flex-direction: column;        /* No tocar */
+    gap: 16px;                     /* 📐 CAMBIA AQUÍ el espacio entre el texto y las redes */
 }
 
 /* Texto de derechos reservados */
 .footer-derechos {
-    font-size: 13px;     /* Tamaño pequeño */
-    color: #888888;      /* Gris medio — texto secundario */
-    letter-spacing: 1px; /* Leve espaciado */
+    font-size: 13px;     /* 📐 CAMBIA AQUÍ el tamaño del texto de derechos */
+    color: #888888;      /* 🎨 CAMBIA AQUÍ el color del texto de derechos */
+    letter-spacing: 1px; /* No tocar */
 }
 
 /* Contenedor de los links de redes sociales */
 .footer-redes {
-    display: flex;           /* Pone los links en fila */
-    justify-content: center; /* Los centra */
-    gap: 30px;               /* Espacio entre cada red social */
+    display: flex;           /* No tocar */
+    justify-content: center; /* No tocar */
+    gap: 30px;               /* 📐 CAMBIA AQUÍ el espacio entre cada red social */
 }
 
 /* Cada link de red social */
 .footer-redes a {
-    color: #FFFFFF;            /* Color blanco */
-    text-decoration: none;     /* Sin subrayado */
-    font-size: 13px;           /* Tamaño pequeño */
-    letter-spacing: 2px;       /* Espacio entre letras */
-    text-transform: uppercase; /* En mayúsculas */
-    transition: color 0.3s;   /* Animación suave */
+    color: #FFFFFF;            /* 🎨 CAMBIA AQUÍ el color de los links de redes */
+    text-decoration: none;     /* No tocar */
+    font-size: 13px;           /* 📐 CAMBIA AQUÍ el tamaño de los links de redes */
+    letter-spacing: 2px;       /* No tocar */
+    text-transform: uppercase; /* No tocar */
+    transition: color 0.3s;    /* No tocar */
 }
 
 /* Efecto hover en las redes sociales */
 .footer-redes a:hover {
-    color: #E60000; /* Se vuelve rojo TX al pasar el mouse */
+    color: #E60000; /* 🎨 CAMBIA AQUÍ el color al pasar el mouse por las redes */
 }
 
 
 /* ========================
    RESPONSIVE — Adaptación para diferentes dispositivos
-   - Ajustamos los estilos según el tamaño de la pantalla
-   - Primero celular, luego tablet, luego PC
+   - Aquí ajustamos los estilos según el tamaño de la pantalla
 ======================== */
 
 /* --- CELULAR (pantallas menores a 480px) --- */
 @media (max-width: 480px) {
 
-    /* El header se hace menos alto en celular */
     .header {
-        height: 80%; /* Menos altura para pantallas pequeñas */
+        height: 120px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en CELULAR */
     }
 
-    /* El logo se achica para caber en celular */
     .header-logo-img {
-        height: 100px; /* Más pequeño en celular */
+        height: 100px; /* 📐 CAMBIA AQUÍ el tamaño del logo en CELULAR */
     }
 
-    /* Los links de la nav se apilan en columna */
     .nav-links {
-        flex-direction: column; /* De fila pasa a columna */
-        gap: 12px;              /* Menos espacio entre links */
-        align-items: center;    /* Centrados */
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
     }
 
-    /* El título del slogan se hace más pequeño */
     .slogan-contenido h1 {
-        font-size: 28px;     /* Reducimos para que quepa en pantalla pequeña */
+        font-size: 28px; /* 📐 CAMBIA AQUÍ el tamaño del título en CELULAR */
         letter-spacing: 2px;
     }
 
-    /* El párrafo también se reduce */
     .slogan-contenido p {
-        font-size: 14px;
+        font-size: 14px; /* 📐 CAMBIA AQUÍ el tamaño del párrafo en CELULAR */
     }
 
-    /* El TX de fondo se reduce también */
     .slogan-fondo {
-        font-size: 180px;
+        font-size: 180px; /* 📐 CAMBIA AQUÍ el TX de fondo en CELULAR */
     }
 }
 
@@ -239,19 +232,19 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
 
     .header {
-        height: 150px; /* Altura media para tablet */
+        height: 150px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en TABLET */
     }
 
     .header-logo-img {
-        height: 140px; /* Tamaño medio del logo */
+        height: 130px; /* 📐 CAMBIA AQUÍ el tamaño del logo en TABLET */
     }
 
     .slogan-contenido h1 {
-        font-size: 38px;
+        font-size: 38px; /* 📐 CAMBIA AQUÍ el tamaño del título en TABLET */
     }
 
     .slogan-fondo {
-        font-size: 260px;
+        font-size: 260px; /* 📐 CAMBIA AQUÍ el TX de fondo en TABLET */
     }
 }
 
@@ -259,18 +252,18 @@ body {
 @media (min-width: 1024px) {
 
     .header {
-        height: 220px; /* Más alto en pantallas grandes */
+        height: 180px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en PC */
     }
 
     .header-logo-img {
-        height: 200px; /* Logo más grande en PC */
+        height: 200px; /* 📐 CAMBIA AQUÍ el tamaño del logo en PC */
     }
 
     .slogan-contenido h1 {
-        font-size: 60px;
+        font-size: 60px; /* 📐 CAMBIA AQUÍ el tamaño del título en PC */
     }
 
     .slogan-fondo {
-        font-size: 400px;
+        font-size: 400px; /* 📐 CAMBIA AQUÍ el TX de fondo en PC */
     }
 }
