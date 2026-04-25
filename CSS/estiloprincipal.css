@@ -55,7 +55,7 @@ body {
 .navbar {
     background-color: #0A0A0A;         /* 🎨 CAMBIA AQUÍ el color de fondo de la barra de nav */
     width: 100%;                        /* Ocupa todo el ancho — no tocar */
-    padding: 20px 40px;                /* 📐 CAMBIA AQUÍ el espacio interno de la nav (arriba/abajo y lados) */
+    padding: 30px 40px;                /* 📐 CAMBIA AQUÍ el espacio interno de la nav (arriba/abajo y lados) */
     border-bottom: 3px solid #be2525;  /* 📏 CAMBIA AQUÍ el grosor y color de la línea abajo de la nav */
 }
 
@@ -69,12 +69,13 @@ body {
 
 /* Cada link individual de la navegación */
 .nav-links a {
-    color: #FFFFFF;            /* 🎨 CAMBIA AQUÍ el color de las letras del menú */
+    color: #fffffff8;            /* 🎨 CAMBIA AQUÍ el color de las letras del menú */
     text-decoration: none;     /* Quita el subrayado — no tocar */
-    font-size: 14px;           /* 📐 CAMBIA AQUÍ el tamaño de las letras del menú */
-    letter-spacing: 3px;       /* 📐 CAMBIA AQUÍ el espacio entre letras del menú */
+    font-size: 18px;           /* 📐 CAMBIA AQUÍ el tamaño de las letras del menú */
+    letter-spacing: 2px;       /* 📐 CAMBIA AQUÍ el espacio entre letras del menú */
     text-transform: uppercase; /* Convierte a mayúsculas automáticamente — no tocar */
     transition: color 0.3s;    /* Animación suave al pasar el mouse — no tocar */
+    font-weight: 800;          /* 📐 CAMBIA AQUÍ el grosor de las letras del menú (400=normal, 700=negrita) */
 }
 
 /* Efecto cuando el mouse pasa encima de un link */
