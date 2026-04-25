@@ -202,11 +202,11 @@ body {
 @media (max-width: 480px) {
 
     .header {
-        height: 120px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en CELULAR */
+        height: 100px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en CELULAR */
     }
 
     .header-logo-img {
-        height: 100px; /* 📐 CAMBIA AQUÍ el tamaño del logo en CELULAR */
+        height: 80px; /* 📐 CAMBIA AQUÍ el tamaño del logo en CELULAR */
     }
 
     .nav-links {
@@ -225,7 +225,7 @@ body {
     }
 
     .slogan-fondo {
-        font-size: 180px; /* 📐 CAMBIA AQUÍ el TX de fondo en CELULAR */
+        font-size: 150px; /* 📐 CAMBIA AQUÍ el TX de fondo en CELULAR */
     }
 }
 
