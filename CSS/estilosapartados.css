@@ -1,0 +1,124 @@
+/* ========================
+  El catalogo insano xd
+   ======================== */
+.catalogo {
+    display: grid;
+    /* Esto crea exactamente 3 columnas del mismo tamaño */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Espacio entre los productos */
+    padding: 20px;
+    max-width: 1200px; /* Evita que se estire demasiado en pantallas gigantes */
+    margin: 0 auto; /* Centra el catálogo en la pantalla */
+}
+
+/* ========================
+   los apartados independientes
+   ======================== */
+.producto {
+    background-color: #ffffff;
+    border-radius: 10px; /* Bordes suavemente redondeados */
+    overflow: hidden; /* Crucial: evita que la imagen se salga al hacer zoom */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar relieve */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================
+   Animacion
+   ======================== */
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* La transición hace que el crecimiento sea suave y no de golpe */
+    transition: transform 0.4s ease; 
+}
+
+/* ESTADO HOVER: Cuando el mouse pasa sobre el .producto, la imagen crece */
+.producto:hover img {
+    transform: scale(1.08); 
+}
+
+/* ========================
+  Informacion (apartado de)
+   ======================== */
+.informacion {
+    padding: 20px;
+    background-color: #ffffff; /* Color base blanco */
+    flex-grow: 1; /* Empuja el contenido para que todas las cajas midan lo mismo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Prepara el cambio de color para que sea fluido */
+    transition: background-color 0.4s ease; 
+}
+
+/* ESTADO HOVER: Cuando el mouse pasa sobre el .producto, el fondo cambia */
+.producto:hover .informacion {
+    background-color: #f0f4f8; /* Cambia a un tono gris/azulado muy claro y elegante */
+}
+
+/* ========================
+   titulos finales
+   ======================== */
+.informacion h3 {
+    margin: 0 0 10px 0;
+    font-family: Arial, sans-serif; /* Tipografía limpia y moderna */
+    font-size: 1.4rem;
+    color: #222222; /* Un negro suave, no absoluto, cansa menos la vista */
+    text-transform: uppercase; /* Opcional: pone los títulos en mayúsculas */
+    letter-spacing: 1px;
+}
+
+.informacion p {
+    font-family: Arial, sans-serif;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Destacando el precio */
+.precio .dinero {
+    font-weight: bold;
+    color: #e63946; 
+    font-size: 1.2rem;
+    margin: 0;
+}
+/* ========================
+   titulo principal :>
+   ======================== */
+
+#TX-ACCESORIOS header {
+    text-align: center; 
+    padding: 40px 20px; 
+    max-width: 800px;   
+    margin: 0 auto;     
+}
+
+#TX-ACCESORIOS h2 {
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 3rem;      
+    color: #000000;        
+    text-transform: uppercase; 
+    margin-bottom: 10px;   
+    letter-spacing: -1px;  
+    position: relative;
+    display: inline-block;
+}
+#TX-ACCESORIOS h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e63946; 
+    margin: 10px auto 0;     
+    border-radius: 2px;
+}
+
+#descripcion {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+}
