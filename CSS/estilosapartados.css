@@ -3,14 +3,28 @@
    ======================== */
 .catalogo {
     display: grid;
-    /* Esto crea exactamente 3 columnas del mismo tamaño */
-    grid-template-columns: repeat(3, 1fr); 
+
     gap: 30px; /* Espacio entre los productos */
     padding: 20px;
     max-width: 1200px; /* Evita que se estire demasiado en pantallas gigantes */
     margin: 0 auto; /* Centra el catálogo en la pantalla */
 }
 
+/* ========================
+  Apartado de columnas dependiendo de q necesite
+   ======================== */
+.cata-tacos {
+    grid-template-columns: repeat(2, 1fr);
+}
+.cata-accesorios {
+    grid-template-columns: repeat(3, 1fr); 
+}
+.cata-velocity {
+    grid-template-columns: repeat(1, 1fr);
+}
+.cata-equipacion{
+    grid-template-columns: repeat(4, 1fr);
+}
 /* ========================
    los apartados independientes
    ======================== */
@@ -30,11 +44,10 @@
     width: 100%;
     height: auto;
     display: block;
-    /* La transición hace que el crecimiento sea suave y no de golpe */
     transition: transform 0.4s ease; 
 }
 
-/* ESTADO HOVER: Cuando el mouse pasa sobre el .producto, la imagen crece */
+/* ESTADO HOVER*/
 .producto:hover img {
     transform: scale(1.08); 
 }
@@ -44,8 +57,8 @@
    ======================== */
 .informacion {
     padding: 20px;
-    background-color: #ffffff; /* Color base blanco */
-    flex-grow: 1; /* Empuja el contenido para que todas las cajas midan lo mismo */
+    background-color: #a09595; 
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,9 +66,9 @@
     transition: background-color 0.4s ease; 
 }
 
-/* ESTADO HOVER: Cuando el mouse pasa sobre el .producto, el fondo cambia */
+/* ESTADO HOVER*/
 .producto:hover .informacion {
-    background-color: #f0f4f8; /* Cambia a un tono gris/azulado muy claro y elegante */
+    background-color: #d19a9a; 
 }
 
 /* ========================
@@ -65,8 +78,8 @@
     margin: 0 0 10px 0;
     font-family: Arial, sans-serif; /* Tipografía limpia y moderna */
     font-size: 1.4rem;
-    color: #222222; /* Un negro suave, no absoluto, cansa menos la vista */
-    text-transform: uppercase; /* Opcional: pone los títulos en mayúsculas */
+    color: #222222; 
+    text-transform: uppercase; 
     letter-spacing: 1px;
 }
 
@@ -89,14 +102,14 @@
    titulo principal :>
    ======================== */
 
-#TX-ACCESORIOS header {
+#intro header {
     text-align: center; 
     padding: 40px 20px; 
     max-width: 800px;   
     margin: 0 auto;     
 }
 
-#TX-ACCESORIOS h2 {
+#intro h2 {
     font-family: 'Arial Black', sans-serif; 
     font-size: 3rem;      
     color: #000000;        
@@ -106,7 +119,7 @@
     position: relative;
     display: inline-block;
 }
-#TX-ACCESORIOS h2::after {
+#intro h2::after {
     content: "";
     display: block;
     width: 60px;
