@@ -215,3 +215,33 @@
         font-size: 0.9rem;
     }
 }
+
+/* ========================
+   BOTÓN VOLVER A INICIO
+======================== */
+
+.contenedor-boton-volver {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 40px auto; /* Centrado horizontal con margen */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrado del contenido */
+}
+
+.btn-volver-inicio {
+    display: inline-block; /* Comportamiento de bloque alineado */
+    background: #E60000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 12px 30px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    transition: background 0.3s, transform 0.2s; /* Transiciones suave */
+    border: 2px solid #E60000; /* Borde rojo */
+}
+
+.btn-volver-inicio:hover {
+    background: #cc0000; /* Rojo más oscuro */
+    border-color: #cc0000; /* Borde rojo oscuro */
+    transform: scale(1.05); /* Efecto de zoom */
+}

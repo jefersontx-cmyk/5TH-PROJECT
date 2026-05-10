@@ -1,13 +1,12 @@
 
-# 👥 Equipo de Desarrollo
+# TX – Proyecto Estudiantil
+
+## 👥 Equipo de Desarrollo
 
 - **Jeferson Ramírez**: Desarrollo frontend y diseño UX/UI
 - **Carlos Contreras**: Desarrollo backend y lógica de negocio
 
-*Proyecto académico - Instituto Profecional de Computación (IPC)*
-
----
-# TX – Proyecto Estudiantil
+*Proyecto académico - Instituto Profesional de Computación (IPC)*
 
 ## ⚠️ Aviso Importante
 Este proyecto ha sido desarrollado únicamente con fines educativos por estudiantes.  
