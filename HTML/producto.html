@@ -125,49 +125,6 @@
         </button>
     </div>
 
-        <!-- Productos relacionados -->
-        <section class="productos-relacionados">
-            <h2>Productos Relacionados</h2>
-            <div class="catalogo" id="productos-relacionados">
-                <!-- Los productos relacionados se cargarán dinámicamente -->
-            </div>
-        </section>
-                        <img src="../images/placeholder.png" alt="Medias TX">
-                    </div>
-                    <div class="informacion">
-                        <h3>Medias TX Antideslizantes</h3>
-                        <p>Medias con tecnología antideslizante</p>
-                        <div class="precio">
-                            <p class="dinero">Q.180.00</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div>
-                        <img src="../images/placeholder.png" alt="Gorra TX">
-                    </div>
-                    <div class="informacion">
-                        <h3>Gorra TX Performance</h3>
-                        <p>Protección solar y estilo urbano</p>
-                        <div class="precio">
-                            <p class="dinero">Q.150.00</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div>
-                        <img src="../images/placeholder.png" alt="Balón TX">
-                    </div>
-                    <div class="informacion">
-                        <h3>Balón TX Oficial</h3>
-                        <p>Balón de fútbol profesional</p>
-                        <div class="precio">
-                            <p class="dinero">Q.250.00</p>
-                        </div>
-                    </div>
-        </section>
     </main>
 
     <!-- ========================
@@ -256,9 +213,7 @@
                 listaCaracteristicas.appendChild(li);
             });
 
-            // Cargar productos relacionados
-            cargarProductosRelacionados(productoActual.categoria, productoId);
-
+    
             // Actualizar título de la página
             document.title = `${productoActual.nombre} - TX Performance`;
         }
