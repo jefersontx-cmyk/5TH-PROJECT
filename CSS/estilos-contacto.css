@@ -108,6 +108,35 @@
 }
 
 /* ===========================================
+   BOTÓN DE VOLVER
+   =========================================== */
+
+.contenedor-boton-volver {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.btn-volver-inicio {
+    display: inline-block;
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #E60000;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-volver-inicio:hover {
+    background: #E60000;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+}
+
+/* ===========================================
    BOTÓN DE ENVIAR
    =========================================== */
 

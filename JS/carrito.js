@@ -116,6 +116,11 @@ function finalizarCompra() {
 
     const estaEnHTML = window.location.pathname.includes('/HTML/');
     const rutaContacto = estaEnHTML ? 'Contacto.html' : 'HTML/Contacto.html';
+
+    carrito = []; // Vaciar el carrito al finalizar compra
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    actualizarContadorCarrito();
+
     window.location.href = `${rutaContacto}?mensaje=${encodeURIComponent(mensaje)}`;
 }
 
@@ -143,10 +148,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const modal = document.getElementById('modal-carrito'); // Modal de carrito
     if (modal) {
-        window.onclick = function(event) {
+        modal.addEventListener('click', function(event) {
             if (event.target === modal) {
                 cerrarCarrito(); // Cerrar modal al hacer clic fuera
             }
-        };
+        });
     }
 });

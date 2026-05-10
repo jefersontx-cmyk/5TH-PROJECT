@@ -4,28 +4,17 @@
 /* Contenedor principal del catálogo de productos */
 .catalogo {
     display: grid; /* Usa CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales en desktop */
     gap: 30px; /* Espacio entre elementos */
     padding: 20px; /* Espaciado interno */
     max-width: 1200px; /* Ancho máximo */
     margin: 0 auto; /* Centrado automático */
 }
 
-/* Grid de 2 columnas para la página de tacos */
-.cata-tacos {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
-}
-
-/* Grid de 3 columnas para la página de accesorios */
-.cata-accesorios {
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-}
-
-/* Grid de 1 columna para la página de velocity */
-.cata-velocity {
-    grid-template-columns: repeat(1, 1fr); /* 1 columna */
-}
-
-/* Grid de 4 columnas para la página de equipación */
+/* Grid de 4 columnas para todas las páginas de catálogo */
+.cata-tacos,
+.cata-accesorios,
+.cata-velocity,
 .cata-equipacion {
     grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
 }
@@ -47,6 +36,8 @@
 .producto img {
     width: 100%; /* Ancho completo */
     height: auto; /* Altura automática */
+    max-height: 250px; /* Limita el tamaño máximo de la imagen */
+    object-fit: cover; /* Mantiene proporción, recorta si es necesario */
     display: block; /* Bloque */
     transition: transform 0.4s ease; /* Transición suave */
 }
@@ -182,6 +173,10 @@
     #descripcion {
         font-size: 1rem;
     }
+
+    .producto img {
+        max-height: 280px;
+    }
 }
 
 /* CELULAR */
@@ -197,6 +192,10 @@
     .catalogo {
         gap: 15px;
         padding: 10px;
+    }
+
+    .producto img {
+        max-height: 300px;
     }
 
     .informacion h3 {

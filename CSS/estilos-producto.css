@@ -34,7 +34,8 @@
 
 .imagen-principal img {
     width: 100%; /* Ancho completo del contenedor */
-    height: 400px; /* Alto fijo */
+    height: auto; /* Altura automática para mantener proporción */
+    max-height: 420px; /* Limita el alto máximo sin forzar tamaño */
     object-fit: cover; /* Mantiene proporción, recorta si necesario */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra sutil */
@@ -42,7 +43,8 @@
 
 .imagenes-secundarias img {
     width: 100%; /* Ancho completo */
-    height: 150px; /* Alto más pequeño */
+    height: auto; /* Altura automática para mantener proporción */
+    max-height: 150px; /* Limita el alto máximo */
     object-fit: cover; /* Mantiene proporción */
     border-radius: 8px; /* Bordes redondeados */
     cursor: pointer; /* Cursor de mano */
@@ -168,7 +170,8 @@
     }
 
     .imagen-principal img {
-        height: 300px; /* Altura menor en móvil */
+        height: auto;
+        max-height: 300px; /* Altura máxima menor en móvil */
     }
 
     .info-producto h1 {

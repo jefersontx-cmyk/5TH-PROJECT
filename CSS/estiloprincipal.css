@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /* body es todo el cuerpo de la página */
 body {
     background-color: #2b2626; /* Color de fondo oscuro */
@@ -77,6 +82,20 @@ body {
     display: flex;
 }
 
+/* Overlay oscuro detrás del menú para permitir cerrar sin seleccionar una opción */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 900;
+    cursor: pointer;
+}
+
+#menu-toggle:checked ~ .menu-overlay {
+    display: block;
+}
+
 /* Links dentro del panel lateral */
 .menu-panel li a {
     display: block;
@@ -114,10 +133,11 @@ body {
 }
 
 /* La imagen del logo TX dentro del header */
+.header-logo,
 .header-logo-img {
-    height: 140px;       /* 📐 CAMBIA AQUÍ el tamaño de la foto del logo (en px) */
-    width: auto;         /* El ancho se ajusta solo sin deformar la imagen — no tocar */
-    object-fit: contain; /* La imagen se adapta sin cortarse ni deformarse — no tocar */
+    width: auto;             /* El ancho se ajusta solo sin deformar la imagen — no tocar */
+    max-height: none;        /* No limitar el logo aquí para que conserve su estilo original */
+    object-fit: contain;     /* La imagen se adapta sin cortarse ni deformarse — no tocar */
 }
 
 /* ========================
@@ -335,8 +355,10 @@ body {
         height: 150px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en TABLET */
     }
 
+    .header-logo,
     .header-logo-img {
-        height: 130px; /* 📐 CAMBIA AQUÍ el tamaño del logo en TABLET */
+        width: auto;
+        max-height: none; /* No limitar el logo en tablet */
     }
 
     .slogan-contenido h1 {
@@ -355,8 +377,10 @@ body {
         height: 180px; /* 📐 CAMBIA AQUÍ la altura del rectángulo en PC */
     }
 
+    .header-logo,
     .header-logo-img {
-        height: 200px; /* 📐 CAMBIA AQUÍ el tamaño del logo en PC */
+        width: auto;
+        max-height: none; /* No limitar el logo en PC */
     }
 
     .slogan-contenido h1 {
@@ -457,6 +481,25 @@ body {
     width: 90%; /* Ancho responsive en móviles */
     max-height: 80vh; /* Alto máximo con scroll si es necesario */
     overflow-y: auto; /* Scroll vertical */
+}
+
+@media (max-width: 480px) {
+    .modal-contenido {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .item-carrito {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .modal-carrito {
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 40px;
+    }
 }
 
 .cerrar-modal {
