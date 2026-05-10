@@ -18,7 +18,7 @@ function actualizarContadorCarrito() {
 }
 
 // Función para agregar producto al carrito
-function agregarAlCarrito(nombre, precio, imagen, talla) {
+function agregarAlCarrito(nombre, precio, imagen, talla, categoria) {
     if (!talla) { // Validar que exista talla seleccionada
         alert('Por favor selecciona una talla antes de agregar al carrito.');
         return; // Detener si no hay talla
@@ -36,6 +36,7 @@ function agregarAlCarrito(nombre, precio, imagen, talla) {
             precio: parseFloat(precio), // Precio convertido a número
             imagen: imagen, // URL de la imagen
             talla: talla, // Talla seleccionada
+            categoria: categoria || '', // Categoría del producto
             cantidad: 1 // Cantidad inicial
         });
     }
@@ -104,19 +105,26 @@ function eliminarDelCarrito(index) {
     }
 }
 
-// Función para finalizar compra y enviar al formulario de contacto con los productos seleccionados
+// Función para finalizar compra y regresar al catálogo de la categoría principal
 function finalizarCompra() {
     if (carrito.length === 0) {
         alert('Tu carrito está vacío');
         return; // No hay compra si el carrito está vacío
     }
 
-    const productosSeleccionados = carrito.map(item => `- ${item.nombre} (Talla ${item.talla}) x ${item.cantidad}`).join('\n');
-    const mensaje = `Hola, estoy interesado en los siguientes productos:\n${productosSeleccionados}\n\nPor favor contáctame para continuar con la compra.`;
+    const primeraCategoria = (carrito.find(item => item.categoria) || {}).categoria || ''; // Usar la primera categoría definida
+    const rutasCategoria = {
+        equipacion: 'Equipacion.html',
+        tacos: 'Tacos.html',
+        accesorios: 'Accesorios.html',
+        velocity: 'Velocity.html'
+    };
 
     const estaEnHTML = window.location.pathname.includes('/HTML/');
-    const rutaContacto = estaEnHTML ? 'Contacto.html' : 'HTML/Contacto.html';
-    window.location.href = `${rutaContacto}?mensaje=${encodeURIComponent(mensaje)}`;
+    const baseRuta = estaEnHTML ? '' : 'HTML/';
+    const paginaDestino = rutasCategoria[primeraCategoria] || (estaEnHTML ? '../index.html' : 'index.html');
+
+    window.location.href = `${baseRuta}${paginaDestino}`;
 }
 
 // Función para seleccionar talla

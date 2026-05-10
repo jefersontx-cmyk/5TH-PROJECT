@@ -1,3 +1,13 @@
+---
+
+## 👥 **Equipo de Desarrollo**
+
+- **Jeferson Ramírez**: Desarrollo frontend y diseño UX/UI
+- **Carlos Contreras**: Desarrollo backend y lógica de negocio
+
+*Proyecto académico - Instituto Profecional de Computación (IPC)*
+
+---
 # TX – Proyecto Estudiantil
 
 ## ⚠️ Aviso Importante
@@ -43,57 +53,6 @@ La página web presenta una experiencia visual inspirada en marcas deportivas pr
 - **Base de datos completa**: 6 productos únicos con información detallada
 - **Categorías organizadas**: Equipación, Tacos y Accesorios
 
-### 📞 **Formulario de Contacto Mejorado**
-- **Validación en tiempo real**: Campos obligatorios y formato de email
-- **Información de contacto**: Dirección, teléfono, horario de atención
-- **Mensaje de éxito**: Confirmación visual al enviar el formulario
-- **Diseño responsive**: Funciona perfectamente en móviles y desktop
-
-### ✨ **Animaciones y Efectos Visuales**
-- **Animación de entrada**: Fade-in suave al cargar la página
-- **Efectos hover**: Transiciones suaves en botones e imágenes
-- **Carrito bounce**: Animación llamativa para el ícono del carrito
-- **Transiciones CSS**: Efectos suaves en todos los elementos interactivos
-
-### 🎨 **Arquitectura CSS Modular**
-- **`estiloprincipal.css`**: Estilos globales, navegación, carrito y animaciones
-- **`estilosapartados.css`**: Estilos para páginas de catálogo
-- **`estilos-producto.css`**: Estilos específicos de página producto
-- **`estilos-contacto.css`**: Estilos del formulario de contacto
-- **Comentarios detallados**: Cada regla CSS está documentada
-
-### 🔧 **JavaScript Modular**
-- **`productos.js`**: Base de datos de productos y funciones de acceso
-- **`carrito.js`**: Lógica completa del carrito de compras
-- **Código compartido**: Eliminada duplicación entre páginas
-- **Funciones reutilizables**: Módulos independientes y mantenibles
-
----
-
-## 🎨 **Organización de Estilos CSS**
-
-### Arquitectura Modular
-- **`estiloprincipal.css`**: Estilos globales, navegación, carrito flotante, animaciones
-- **`estilosapartados.css`**: Estilos específicos para páginas de catálogo
-- **`estilos-producto.css`**: Estilos exclusivos de la página de producto detallada
-- **`estilos-contacto.css`**: Estilos específicos del formulario de contacto
-
-### Beneficios de la Separación
-- ✅ **Mantenibilidad**: Cada archivo tiene una responsabilidad clara
-- ✅ **Reutilización**: Estilos globales separados de específicos
-- ✅ **Performance**: Carga selectiva de estilos por página
-- ✅ **Colaboración**: Fácil identificación de dónde modificar estilos
-
----
-
-## 🛠 **Tecnologías Utilizadas**
-
-- **HTML5**: Estructura semántica y accesible
-- **CSS3**: Animaciones, Grid, Flexbox y diseño responsive
-- **JavaScript**: Interactividad, localStorage y manipulación del DOM
-- **LocalStorage**: Persistencia de datos del carrito
-- **CSS Animations**: Efectos visuales sin librerías externas
-
 ---
 
 ## 📁 **Estructura del Proyecto**
@@ -119,25 +78,6 @@ La página web presenta una experiencia visual inspirada en marcas deportivas pr
 ├── images/                   # Imágenes del proyecto
 └── README.md                 # Este archivo
 ```
-
----
-
-## 🔧 **Problemas Solucionados**
-
-### ✅ "Ver Producto" para Todos los Productos
-- **Problema**: Los botones "Ver Producto" solo funcionaban para un producto estático
-- **Solución**: Sistema dinámico con base de datos centralizada y navegación por URL parameters
-- **Resultado**: Todos los productos ahora tienen navegación funcional a páginas detalladas únicas
-
-### ✅ Carrito con Fallas
-- **Problema**: Código JavaScript duplicado en múltiples archivos, difícil mantenimiento
-- **Solución**: Archivo compartido `carrito.js` con funciones centralizadas
-- **Resultado**: Carrito consistente en todas las páginas, fácil de mantener y actualizar
-
-### ✅ Arquitectura Modular
-- **Antes**: Código inline mezclado con HTML
-- **Después**: JavaScript modular, reutilizable y mantenible
-- **Beneficio**: Cambios globales requieren modificar solo un archivo
 
 ---
 
@@ -182,16 +122,6 @@ La página web presenta una experiencia visual inspirada en marcas deportivas pr
 - [ ] **Newsletter**: Suscripción a ofertas y novedades
 - [ ] **App PWA**: Versión instalable como aplicación móvil
 
----
-
-## 👥 **Equipo de Desarrollo**
-
-- **Jeferson Ramírez**: Desarrollo frontend y diseño UX/UI
-- **Carlos Contreras**: Desarrollo backend y lógica de negocio
-
-*Proyecto académico - Instituto Técnico de Capacitación y Productividad (IPC)*
-
----
 
 ## ⚽ Enfoque Principal
 
