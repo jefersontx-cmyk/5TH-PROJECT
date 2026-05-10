@@ -1,6 +1,5 @@
----
 
-## 👥 **Equipo de Desarrollo**
+# 👥 Equipo de Desarrollo
 
 - **Jeferson Ramírez**: Desarrollo frontend y diseño UX/UI
 - **Carlos Contreras**: Desarrollo backend y lógica de negocio
