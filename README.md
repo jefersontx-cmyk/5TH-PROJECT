@@ -3,7 +3,7 @@
 
 ## 👥 Equipo de Desarrollo
 
-- **Jeferson Ramírez**: Desarrollo frontend y diseño UX/UI
+- **Jeferson Ramírez**: Desarrollo frontend y diseño 
 - **Carlos Contreras**: Desarrollo backend y lógica de negocio
 
 *Proyecto académico - Instituto Profesional de Computación (IPC)*
