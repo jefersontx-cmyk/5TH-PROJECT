@@ -1,0 +1,231 @@
+/* ===========================================
+   ESTILOS PARA PÁGINA DE PRODUCTO DETALLADA
+   - Layout de producto con galería de imágenes
+   - Selector de tallas interactivo
+   - Información del producto
+   - Productos relacionados
+   =========================================== */
+
+/* Contenedor principal del detalle del producto */
+.producto-detalle {
+    max-width: 1200px; /* Ancho máximo para desktop */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 40px 20px; /* Espaciado interno */
+    display: grid; /* Layout en grid */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 40px; /* Espacio entre columnas */
+}
+
+/* ===========================================
+   GALERÍA DE IMÁGENES
+   - Imagen principal grande
+   - Miniaturas clickeables
+   =========================================== */
+
+.galeria-imagenes {
+    display: grid; /* Grid para organizar imágenes */
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px; /* Espacio entre imágenes */
+}
+
+.imagen-principal {
+    grid-column: 1 / -1; /* Ocupa toda la fila */
+}
+
+.imagen-principal img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 400px; /* Alto fijo */
+    object-fit: cover; /* Mantiene proporción, recorta si necesario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
+.imagenes-secundarias img {
+    width: 100%; /* Ancho completo */
+    height: 150px; /* Alto más pequeño */
+    object-fit: cover; /* Mantiene proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.imagenes-secundarias img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar mouse */
+}
+
+/* ===========================================
+   INFORMACIÓN DEL PRODUCTO
+   - Título, precio, descripción
+   - Selector de tallas
+   =========================================== */
+
+.info-producto h1 {
+    font-size: 2.5rem; /* Tamaño grande para título */
+    color: #E60000; /* Color rojo de la marca */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.precio-producto {
+    font-size: 2rem; /* Tamaño destacado */
+    font-weight: bold; /* Texto en negrita */
+    color: #E60000; /* Color rojo */
+    margin: 20px 0; /* Margen vertical */
+}
+
+.selector-tallas {
+    margin: 30px 0; /* Margen vertical */
+}
+
+.selector-tallas h3 {
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.tallas {
+    display: flex; /* Layout horizontal */
+    gap: 10px; /* Espacio entre tallas */
+    flex-wrap: wrap; /* Permite saltos de línea */
+}
+
+.talla {
+    padding: 10px 15px; /* Espaciado interno */
+    border: 2px solid #E60000; /* Borde rojo */
+    border-radius: 5px; /* Bordes redondeados */
+    background: transparent; /* Fondo transparente */
+    color: #E60000; /* Texto rojo */
+    cursor: pointer; /* Cursor de mano */
+    transition: all 0.3s; /* Transición suave */
+}
+
+.talla:hover,
+.talla.seleccionada {
+    background: #E60000; /* Fondo rojo al seleccionar */
+    color: white; /* Texto blanco */
+}
+
+/* ===========================================
+   BOTÓN DE AGREGAR AL CARRITO
+   =========================================== */
+
+.btn-agregar-carrito {
+    background: #E60000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    width: 100%; /* Ancho completo */
+    margin: 20px 0; /* Margen vertical */
+    transition: background 0.3s; /* Transición de color */
+}
+
+.btn-agregar-carrito:hover {
+    background: #cc0000; /* Rojo más oscuro al pasar mouse */
+}
+
+/* ===========================================
+   DESCRIPCIÓN DETALLADA
+   =========================================== */
+
+.descripcion-detallada {
+    margin: 30px 0; /* Margen vertical */
+}
+
+.descripcion-detallada h3 {
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+/* ===========================================
+   PRODUCTOS RELACIONADOS
+   =========================================== */
+
+.productos-relacionados {
+    margin-top: 50px; /* Margen superior */
+    padding-top: 30px; /* Padding superior */
+    border-top: 2px solid #E60000; /* Línea separadora roja */
+}
+
+.productos-relacionados h2 {
+    text-align: center; /* Centrado */
+    margin-bottom: 30px; /* Espacio inferior */
+    color: #E60000; /* Color rojo */
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 768px) {
+    .producto-detalle {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        gap: 20px; /* Menos espacio en móvil */
+    }
+
+    .galeria-imagenes {
+        grid-template-columns: 1fr; /* Una columna para imágenes */
+    }
+
+    .imagen-principal img {
+        height: 300px; /* Altura menor en móvil */
+    }
+
+    .info-producto h1 {
+        font-size: 2rem; /* Título más pequeño */
+    }
+
+    .precio-producto {
+        font-size: 1.5rem; /* Precio más pequeño */
+    }
+}
+
+/* ===========================================
+   MODAL DEL CARRITO (ESPECÍFICO DE PRODUCTO)
+   =========================================== */
+
+.modal-carrito {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija */
+    top: 0; /* Desde arriba */
+    left: 0; /* Desde izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background: rgba(0,0,0,0.8); /* Fondo semi-transparente */
+    z-index: 2000; /* Encima de otros elementos */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.modal-contenido {
+    background: #1E1E1E; /* Fondo oscuro */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 500px; /* Ancho máximo */
+    width: 90%; /* Ancho responsive */
+    max-height: 80vh; /* Alto máximo */
+    overflow-y: auto; /* Scroll si es necesario */
+}
+
+.cerrar-modal {
+    float: right; /* A la derecha */
+    font-size: 2rem; /* Tamaño grande */
+    cursor: pointer; /* Cursor de mano */
+    color: #E60000; /* Color rojo */
+}
+
+.item-carrito {
+    display: flex; /* Layout horizontal */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical */
+    padding: 15px 0; /* Espaciado vertical */
+    border-bottom: 1px solid #333; /* Línea separadora */
+}
+
+.total-carrito {
+    font-size: 1.5rem; /* Tamaño grande */
+    font-weight: bold; /* Texto en negrita */
+    color: #E60000; /* Color rojo */
+    text-align: center; /* Centrado */
+    margin: 20px 0; /* Margen vertical */
+}

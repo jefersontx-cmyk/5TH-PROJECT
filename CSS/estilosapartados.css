@@ -1,131 +1,151 @@
 /* ========================
-  El catalogo insano xd
-   ======================== */
+   CATALOGO
+======================== */
+/* Contenedor principal del catálogo de productos */
 .catalogo {
-    display: grid;
-
-    gap: 30px; /* Espacio entre los productos */
-    padding: 20px;
-    max-width: 1200px; /* Evita que se estire demasiado en pantallas gigantes */
-    margin: 0 auto; /* Centra el catálogo en la pantalla */
+    display: grid; /* Usa CSS Grid */
+    gap: 30px; /* Espacio entre elementos */
+    padding: 20px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado automático */
 }
 
-/* ========================
-  Apartado de columnas dependiendo de q necesite
-   ======================== */
+/* Grid de 2 columnas para la página de tacos */
 .cata-tacos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
 }
+
+/* Grid de 3 columnas para la página de accesorios */
 .cata-accesorios {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
 }
+
+/* Grid de 1 columna para la página de velocity */
 .cata-velocity {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* 1 columna */
 }
-.cata-equipacion{
-    grid-template-columns: repeat(4, 1fr);
+
+/* Grid de 4 columnas para la página de equipación */
+.cata-equipacion {
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
 }
+
 /* ========================
-   los apartados independientes
-   ======================== */
+   PRODUCTO
+======================== */
+/* Estilos para cada tarjeta de producto */
 .producto {
-    background-color: #ffffff;
-    border-radius: 10px; /* Bordes suavemente redondeados */
-    overflow: hidden; /* Crucial: evita que la imagen se salga al hacer zoom */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar relieve */
-    display: flex;
-    flex-direction: column;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta desbordamiento */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Elementos en columna */
 }
 
-/* ========================
-   Animacion
-   ======================== */
+/* Imágenes de los productos */
 .producto img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.4s ease; 
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    display: block; /* Bloque */
+    transition: transform 0.4s ease; /* Transición suave */
 }
 
-/* ESTADO HOVER*/
+/* Efecto zoom en la imagen al pasar el mouse */
 .producto:hover img {
-    transform: scale(1.08); 
+    transform: scale(1.08); /* Escala al 108% */
 }
 
-/* ========================
-  Informacion (apartado de)
-   ======================== */
+/* Contenedor de información del producto */
 .informacion {
-    padding: 20px;
-    background-color: #a09595; 
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Prepara el cambio de color para que sea fluido */
-    transition: background-color 0.4s ease; 
+    padding: 20px; /* Espaciado interno */
+    background-color: #a09595; /* Fondo gris */
+    flex-grow: 1; /* Ocupa espacio disponible */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: space-between; /* Espaciado entre elementos */
+    transition: background-color 0.4s ease; /* Transición suave */
 }
 
-/* ESTADO HOVER*/
+/* Cambio de color de fondo al pasar el mouse sobre el producto */
 .producto:hover .informacion {
-    background-color: #d19a9a; 
+    background-color: #d19a9a; /* Fondo rosado */
 }
 
-/* ========================
-   titulos finales
-   ======================== */
+/* Títulos de los productos */
 .informacion h3 {
-    margin: 0 0 10px 0;
-    font-family: Arial, sans-serif; /* Tipografía limpia y moderna */
-    font-size: 1.4rem;
-    color: #222222; 
-    text-transform: uppercase; 
-    letter-spacing: 1px;
+    margin: 0 0 10px 0; /* Márgenes */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 1.4rem; /* Tamaño */
+    color: #222222; /* Color oscuro */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
+/* Descripciones de los productos */
 .informacion p {
-    font-family: Arial, sans-serif;
-    color: #555555;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    font-size: 0.95rem;
+    font-family: Arial, sans-serif; /* Fuente */
+    color: #555555; /* Color gris */
+    line-height: 1.5; /* Altura de línea */
+    margin-bottom: 15px; /* Margen inferior */
+    font-size: 0.95rem; /* Tamaño */
 }
 
-/* Destacando el precio */
+/* Precios de los productos */
 .precio .dinero {
-    font-weight: bold;
-    color: #e63946; 
-    font-size: 1.2rem;
-    margin: 0;
+    font-weight: bold; /* Negrita */
+    color: #e63946; /* Color rojo */
+    font-size: 1.2rem; /* Tamaño */
+    margin: 0; /* Sin márgenes */
 }
-/* ========================
-   titulo principal :>
-   ======================== */
 
+/* Botón para ver producto detallado */
+.btn-ver-producto {
+    background: #E60000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 10px; /* Margen superior */
+    width: 100%; /* Ancho completo */
+    transition: background 0.3s; /* Transición suave */
+}
+
+.btn-ver-producto:hover {
+    background: #cc0000; /* Fondo más oscuro al pasar mouse */
+}
+
+/* ========================
+   TÍTULO PRINCIPAL
+======================== */
 #intro header {
-    text-align: center; 
-    padding: 40px 20px; 
-    max-width: 800px;   
-    margin: 0 auto;     
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #intro h2 {
-    font-family: 'Arial Black', sans-serif; 
-    font-size: 3rem;      
-    color: #000000;        
-    text-transform: uppercase; 
-    margin-bottom: 10px;   
-    letter-spacing: -1px;  
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
     position: relative;
     display: inline-block;
 }
+
 #intro h2::after {
     content: "";
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #e63946; 
-    margin: 10px auto 0;     
+    background-color: #e63946;
+    margin: 10px auto 0;
     border-radius: 2px;
 }
 
@@ -134,4 +154,64 @@
     color: #666;
     font-style: italic;
     margin-top: 15px;
+}
+
+/* ========================
+   RESPONSIVE CATÁLOGO
+======================== */
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    .cata-tacos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cata-accesorios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cata-equipacion {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #intro h2 {
+        font-size: 2rem;
+    }
+
+    #descripcion {
+        font-size: 1rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+
+    .cata-tacos,
+    .cata-accesorios,
+    .cata-velocity,
+    .cata-equipacion {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .catalogo {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .informacion h3 {
+        font-size: 1.1rem;
+    }
+
+    .informacion p {
+        font-size: 0.85rem;
+    }
+
+    #intro h2 {
+        font-size: 1.6rem;
+    }
+
+    #descripcion {
+        font-size: 0.9rem;
+    }
 }

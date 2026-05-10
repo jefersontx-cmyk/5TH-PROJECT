@@ -1,0 +1,160 @@
+/* ===========================================
+   ESTILOS PARA PÁGINA DE CONTACTO
+   - Layout de información y formulario
+   - Estilos del formulario de contacto
+   - Información de contacto
+   =========================================== */
+
+/* Contenedor principal de la sección de contacto */
+.contacto-section {
+    padding: 40px 20px; /* Espaciado interno vertical y horizontal */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centro el contenedor horizontalmente */
+}
+
+/* Contenedor grid para información y formulario */
+.contacto-container {
+    display: grid; /* Layout en grid para separar contenido */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 40px; /* Espacio entre columnas */
+    align-items: start; /* Alinear los elementos hacia arriba */
+}
+
+/* ===========================================
+   INFORMACIÓN DE CONTACTO
+   =========================================== */
+
+.contacto-info h1 {
+    color: #E60000; /* Color rojo de la marca */
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contacto-info p {
+    color: #FFFFFF; /* Texto blanco */
+    font-size: 1.1rem; /* Tamaño de texto legible */
+    line-height: 1.6; /* Altura de línea para mejorar lectura */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+.info-contacto {
+    display: grid; /* Grid para organizar bloques de contacto */
+    gap: 20px; /* Separación entre bloques */
+}
+
+.info-item {
+    background: #1E1E1E; /* Fondo oscuro para cada bloque de contacto */
+    padding: 20px; /* Espaciado interno del bloque */
+    border-radius: 8px; /* Bordes redondeados suaves */
+    border-left: 4px solid #E60000; /* Línea roja a la izquierda */
+}
+
+.info-item h3 {
+    color: #E60000; /* Títulos de sección en rojo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    font-size: 1.2rem; /* Tamaño de subtítulo */
+}
+
+.info-item p {
+    color: #CCCCCC; /* Texto secundario en gris claro */
+    margin: 0; /* Eliminar margen por defecto */
+    line-height: 1.5; /* Espacio entre líneas para legibilidad */
+}
+
+/* ===========================================
+   FORMULARIO DE CONTACTO
+   =========================================== */
+
+.contacto-formulario h2 {
+    color: #E60000; /* Título del formulario en rojo */
+    font-size: 2rem; /* Tamaño grande para el encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.form-grupo {
+    margin-bottom: 20px; /* Separación entre campos del formulario */
+}
+
+.form-grupo label {
+    display: block; /* Mostrar label en bloque */
+    color: #FFFFFF; /* Texto blanco */
+    margin-bottom: 5px; /* Espacio debajo del label */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+    width: 100%; /* Ancho completo del campo */
+    padding: 12px; /* Espacio interno del campo */
+    border: 2px solid #333; /* Borde gris oscuro */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    background: #1E1E1E; /* Fondo oscuro del campo */
+    color: #FFFFFF; /* Texto blanco */
+    font-size: 1rem; /* Tamaño de fuente legible */
+    transition: border-color 0.3s; /* Transición suave al enfocar */
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    outline: none; /* Eliminar outline por defecto */
+    border-color: #E60000; /* Resaltar borde en rojo */
+}
+
+.form-grupo textarea {
+    resize: vertical; /* Permitir redimensionado vertical solamente */
+    min-height: 100px; /* Altura mínima del textarea */
+}
+
+/* ===========================================
+   BOTÓN DE ENVIAR
+   =========================================== */
+
+.btn-enviar {
+    background: #E60000; /* Fondo rojo principal */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    font-size: 1.1rem; /* Tamaño de texto del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano */
+    width: 100%; /* Botón ocupa todo el ancho */
+    transition: background 0.3s; /* Animación suave al pasar mouse */
+}
+
+.btn-enviar:hover {
+    background: #cc0000; /* Fondo más oscuro al pasar el cursor */
+}
+
+/* ===========================================
+   MENSAJE DE ÉXITO
+   =========================================== */
+
+.mensaje-exito {
+    background: #4CAF50; /* Fondo verde para mensaje de éxito */
+    color: white; /* Texto blanco */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Separación del formulario */
+    text-align: center; /* Texto centrado */
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 768px) {
+    .contacto-container {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+        gap: 30px; /* Menos espacio */
+    }
+
+    .contacto-info h1 {
+        font-size: 2rem; /* Título más pequeño */
+    }
+
+    .contacto-formulario h2 {
+        font-size: 1.5rem; /* Subtítulo más pequeño */
+    }
+}

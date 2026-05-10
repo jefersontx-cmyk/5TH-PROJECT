@@ -6,13 +6,38 @@
     <title>TX-EQUIPACION</title>
     <link rel="stylesheet" href="../CSS/estiloprincipal.css">
     <link rel="stylesheet" href="../CSS/estilosapartados.css">
+    <!-- Scripts para funcionalidad del carrito -->
+    <script src="../JS/productos.js"></script>
+    <script src="../JS/carrito.js"></script>
 </head>
 <body>
+    <!-- ========================
+         HEADER — La barra superior con el nombre TX
+         Es lo primero que se ve, forma de rectángulo largo
+    ======================== -->
+    <header class="header">
+        <img src="../images/logo2.png" alt="Logo TX" class="header-logo" height="250%">
+    </header>
+
+    <!-- 1. Checkbox - motor del hamburguesa -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- 2. Panel lateral - solo celular -->
+    <ul class="menu-panel">
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="Equipacion.html">EQUIPACIÓN</a></li>
+        <li><a href="Tacos.html">TACOS</a></li>
+        <li><a href="Accesorios.html">ACCESORIOS</a></li>
+        <li><a href="Velocity.html">VELOCITY</a></li>
+        <li><a href="Contacto.html">CONTACTO</a></li>
+    </ul>
+
         <!-- ========================
          NAV — Barra de navegación
          Links para moverse entre secciones
     ======================== -->
     <nav class="navbar">
+        <label class="menu-btn" for="menu-toggle">☰</label>
         <ul class="nav-links">
             <li><a href="../index.html">INICIO</a></li>
             <li><a href="Equipacion.html">EQUIPACIÓN</a></li>
@@ -45,6 +70,7 @@
                     <div class="precio">
                         <p class="dinero">A solo: Q.250.00</p>
                     </div>
+                    <button class="btn-ver-producto" onclick="window.location.href='producto.html?id=pelotas'">Ver Producto</button>
                 </div>
             </article>
 
@@ -58,6 +84,7 @@
                     <div class="precio">
                         <p class="dinero">A solo: Q.350.00</p>
                     </div>
+                    <button class="btn-ver-producto" onclick="window.location.href='producto.html?id=camisola-pro'">Ver Producto</button>
                 </div>
             </article>
 
@@ -71,6 +98,7 @@
                     <div class="precio">
                         <p class="dinero">A solo: Q.250.00</p>
                     </div>
+                    <button class="btn-ver-producto" onclick="window.location.href='producto.html?id=shorts-entrenamiento'">Ver Producto</button>
                 </div>
             </article>
 
@@ -84,6 +112,7 @@
                     <div class="precio">
                         <p class="dinero">A solo: Q.300.00</p>
                     </div>
+                    <button class="btn-ver-producto" onclick="window.location.href='producto.html?id=calcetines'">Ver Producto</button>
                 </div>
             </article>
         
