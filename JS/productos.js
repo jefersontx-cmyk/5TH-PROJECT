@@ -257,10 +257,10 @@ const productos = {
     },
 
     // Velocity
-    'velocity-night': {
-        nombre: 'TX-Velocity Night',
+    'classic': {
+        nombre: 'Classic',
         precio: 12000.00,
-        descripcion: 'Moto deportiva Velocity Night con diseño oscuro y altas prestaciones.',
+        descripcion: 'Moto deportiva Velocity Classic con diseño oscuro y altas prestaciones.',
         caracteristicas: [
             'Motor potente de 1200cc',
             'Diseño aerodinámico',
@@ -270,19 +270,16 @@ const productos = {
         ],
         cuidados: 'Mantenimiento técnico cada 5000 km y limpieza con paño húmedo.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/moto1.jpeg',
         ],
         tallas: ['Única'],
         categoria: 'velocity'
     },
 
-    'velocity-fever': {
-        nombre: 'TX-Velocity Fever',
+    'chapina': {
+        nombre: 'Chapina',
         precio: 1200.00,
-        descripcion: 'Modelo Velocity Fever para quienes buscan estilo y velocidad urbana.',
+        descripcion: 'Modelo Velocity Chapina para quienes buscan estilo y velocidad urbana.',
         caracteristicas: [
             'Rendimiento ágil',
             'Colores vibrantes',
@@ -292,10 +289,7 @@ const productos = {
         ],
         cuidados: 'Revisar nivel de aceite y limpiar regularmente.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/moto2.jpeg',
         ],
         tallas: ['Única'],
         categoria: 'velocity'
