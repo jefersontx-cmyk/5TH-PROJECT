@@ -130,6 +130,15 @@
  <div class="carrito-flotante" onclick="mostrarCarrito()">
         🛒 <span class="carrito-contador" id="carrito-contador">0</span>
     </div>
+    <div class="modal-carrito" id="modal-carrito">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" onclick="cerrarCarrito()">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="items-carrito"></div>
+            <div class="total-carrito" id="total-carrito">Total: Q.0.00</div>
+            <button class="btn-agregar-carrito" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </div>
 
 
     <footer class="footer">
