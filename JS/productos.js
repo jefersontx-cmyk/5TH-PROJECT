@@ -142,8 +142,8 @@ const productos = {
     },
 
     // Tacos
-    'tacos-velocidad': {
-        nombre: 'TX-Tacos Velocidad',
+    'quetxil': {
+        nombre: 'Quetxil',
         precio: 650.00,
         descripcion: 'Tacos profesionales diseñados para máxima velocidad y control en el campo.',
         caracteristicas: [
@@ -155,18 +155,15 @@ const productos = {
         ],
         cuidados: 'Limpiar con agua y jabón neutro, secar completamente antes de guardar.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/tacos1.jpeg',
         ],
         tallas: ['39', '40', '41', '42', '43', '44'],
         categoria: 'tacos'
     },
 
-    'tacos-entrenamiento': {
-        nombre: 'TX-Tacos Entrenamiento Classic',
-        precio: 300.00,
+    'wonderping': {
+        nombre: 'Wonderping',
+        precio: 650.00,
         descripcion: 'Tacos clásicos versátiles perfectos para entrenamientos diarios y partidos recreativos.',
         caracteristicas: [
             'Suela duradera',
@@ -177,43 +174,37 @@ const productos = {
         ],
         cuidados: 'Limpiar después de cada uso, guardar en lugar fresco y seco.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/tacos2.jpeg',
         ],
         tallas: ['39', '40', '41', '42', '43', '44'],
         categoria: 'tacos'
     },
 
-    'tacos-velocidad-dark': {
-        nombre: 'TX-Tacos Velocidad Dark',
+    'allegiance': {
+        nombre: 'Allegiance',
         precio: 650.00,
-        descripcion: 'Tacos profesionales de color oscuro diseñados para máxima velocidad y control en el campo.',
+        descripcion: 'Tacos profesionales de color rojo diseñados para máxima velocidad y control en el campo.',
         caracteristicas: [
-            'Suela de alta tracción negra',
+            'Ligeros con toques del libertad',
             'Material sintético resistente',
             'Sistema de amortiguación avanzado',
-            'Diseño elegante en negro',
+            'Diseño elegante en rojo',
             'Tecnología anti-deslizante premium'
         ],
         cuidados: 'Limpiar con agua y jabón neutro, secar completamente antes de guardar.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/tacos3.jpeg',
         ],
         tallas: ['39', '40', '41', '42', '43', '44'],
         categoria: 'tacos'
     },
 
-    'tacos-neon': {
-        nombre: 'TX-Tacos Neon',
-        precio: 520.00,
-        descripcion: 'Tacos llamativos con colores neon que te harán el centro de atención en el campo.',
+    'cavitasoris': {
+        nombre: 'Cavitas Oris',
+        precio: 599.00,
+        descripcion: 'Tacos llamativos con colores amarillo y azul para la humildad del barrio',
         caracteristicas: [
-            'Colores fluorescentes vibrantes',
+            'Colores vibrantes',
             'Suela de alta visibilidad',
             'Material reflectante',
             'Diseño moderno y llamativo',
@@ -221,10 +212,45 @@ const productos = {
         ],
         cuidados: 'Limpiar con cuidado para mantener los colores vibrantes.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/tacos4.jpeg',
+        ],
+        tallas: ['39', '40', '41', '42', '43', '44'],
+        categoria: 'tacos'
+    },
+
+    'kuntur': {
+        nombre: 'Kuntur',
+        precio: 650.00,
+        descripcion: 'La iluminación solar dando el poder que necesitas para rodar',
+        caracteristicas: [
+            'Colores vibrantes',
+            'Suela de alta visibilidad',
+            'Material reflectante',
+            'Diseño moderno y llamativo',
+            'Ideal para partidos nocturnos'
+        ],
+        cuidados: 'Limpiar con cuidado para mantener los colores vibrantes.',
+        imagenes: [
+            '../images/tacos5.jpeg',
+        ],
+        tallas: ['39', '40', '41', '42', '43', '44'],
+        categoria: 'tacos'
+    },
+
+    'mercury': {
+        nombre: 'Mercury',
+        precio: 650.00,
+        descripcion: 'Ligero para andar como en el espacio',
+        caracteristicas: [
+            'Colores vibrantes',
+            'Suela de alta visibilidad',
+            'Material reflectante',
+            'Diseño moderno y llamativo',
+            'Ideal para partidos nocturnos'
+        ],
+        cuidados: 'Limpiar con cuidado para mantener los colores vibrantes.',
+        imagenes: [
+            '../images/tacos6.jpeg',
         ],
         tallas: ['39', '40', '41', '42', '43', '44'],
         categoria: 'tacos'

@@ -12,7 +12,9 @@
 }
 
 /* Grid de 4 columnas para todas las páginas de catálogo */
-.cata-tacos,
+.cata-tacos {
+    grid-template-columns: repeat(3, 1fr);
+}
 .cata-accesorios,
 .cata-velocity,
 .cata-equipacion {
