@@ -25,7 +25,7 @@
    =========================================== */
 
 .contacto-info h1 {
-    color: #E60000; /* Color rojo de la marca */
+    color: #0057A8; /* Color rojo de la marca */
     font-size: 2.5rem; /* Tamaño grande para el título */
     margin-bottom: 20px; /* Espacio debajo del título */
 }
@@ -43,14 +43,14 @@
 }
 
 .info-item {
-    background: #1E1E1E; /* Fondo oscuro para cada bloque de contacto */
+    background: #003087; /* Fondo oscuro para cada bloque de contacto */
     padding: 20px; /* Espaciado interno del bloque */
     border-radius: 8px; /* Bordes redondeados suaves */
-    border-left: 4px solid #E60000; /* Línea roja a la izquierda */
+    border-left: 4px solid #0057A8; /* Línea roja a la izquierda */
 }
 
 .info-item h3 {
-    color: #E60000; /* Títulos de sección en rojo */
+    color: #0057A8; /* Títulos de sección en rojo */
     margin-bottom: 10px; /* Espacio debajo del subtítulo */
     font-size: 1.2rem; /* Tamaño de subtítulo */
 }
@@ -66,7 +66,7 @@
    =========================================== */
 
 .contacto-formulario h2 {
-    color: #E60000; /* Título del formulario en rojo */
+    color: #0057A8; /* Título del formulario en rojo */
     font-size: 2rem; /* Tamaño grande para el encabezado */
     margin-bottom: 20px; /* Espacio debajo del encabezado */
 }
@@ -89,7 +89,7 @@
     padding: 12px; /* Espacio interno del campo */
     border: 2px solid #333; /* Borde gris oscuro */
     border-radius: 5px; /* Bordes redondeados suaves */
-    background: #1E1E1E; /* Fondo oscuro del campo */
+    background: #003087; /* Fondo oscuro del campo */
     color: #FFFFFF; /* Texto blanco */
     font-size: 1rem; /* Tamaño de fuente legible */
     transition: border-color 0.3s; /* Transición suave al enfocar */
@@ -99,7 +99,7 @@
 .form-grupo select:focus,
 .form-grupo textarea:focus {
     outline: none; /* Eliminar outline por defecto */
-    border-color: #E60000; /* Resaltar borde en rojo */
+    border-color: #0057A8; /* Resaltar borde en rojo */
 }
 
 .form-grupo textarea {
@@ -122,7 +122,7 @@
     display: inline-block;
     background: transparent;
     color: #FFFFFF;
-    border: 2px solid #E60000;
+    border: 2px solid #0057A8;
     padding: 12px 22px;
     border-radius: 6px;
     text-decoration: none;
@@ -131,7 +131,7 @@
 }
 
 .btn-volver-inicio:hover {
-    background: #E60000;
+    background: #0057A8;
     color: #FFFFFF;
     transform: translateY(-1px);
 }
@@ -141,7 +141,7 @@
    =========================================== */
 
 .btn-enviar {
-    background: #E60000; /* Fondo rojo principal */
+    background: #0057A8; /* Fondo rojo principal */
     color: white; /* Texto blanco */
     border: none; /* Sin borde */
     padding: 15px 30px; /* Espaciado interno del botón */

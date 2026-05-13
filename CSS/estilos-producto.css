@@ -63,14 +63,14 @@
 
 .info-producto h1 {
     font-size: 2.5rem; /* Tamaño grande para título */
-    color: #E60000; /* Color rojo de la marca */
+    color: #0057A8; /* Color rojo de la marca */
     margin-bottom: 20px; /* Espacio inferior */
 }
 
 .precio-producto {
     font-size: 2rem; /* Tamaño destacado */
     font-weight: bold; /* Texto en negrita */
-    color: #E60000; /* Color rojo */
+    color: #0057A8; /* Color rojo */
     margin: 20px 0; /* Margen vertical */
 }
 
@@ -91,17 +91,17 @@
 
 .talla {
     padding: 10px 15px; /* Espaciado interno */
-    border: 2px solid #E60000; /* Borde rojo */
+    border: 2px solid #0057A8; /* Borde rojo */
     border-radius: 5px; /* Bordes redondeados */
     background: transparent; /* Fondo transparente */
-    color: #E60000; /* Texto rojo */
+    color: #0057A8; /* Texto rojo */
     cursor: pointer; /* Cursor de mano */
     transition: all 0.3s; /* Transición suave */
 }
 
 .talla:hover,
 .talla.seleccionada {
-    background: #E60000; /* Fondo rojo al seleccionar */
+    background: #0057A8; /* Fondo rojo al seleccionar */
     color: white; /* Texto blanco */
 }
 
@@ -110,7 +110,7 @@
    =========================================== */
 
 .btn-agregar-carrito {
-    background: #E60000; /* Fondo rojo */
+    background: #0057A8; /* Fondo rojo */
     color: white; /* Texto blanco */
     border: none; /* Sin borde */
     padding: 15px 30px; /* Espaciado interno */
@@ -146,13 +146,13 @@
 .productos-relacionados {
     margin-top: 50px; /* Margen superior */
     padding-top: 30px; /* Padding superior */
-    border-top: 2px solid #E60000; /* Línea separadora roja */
+    border-top: 2px solid #0057A8; /* Línea separadora roja */
 }
 
 .productos-relacionados h2 {
     text-align: center; /* Centrado */
     margin-bottom: 30px; /* Espacio inferior */
-    color: #E60000; /* Color rojo */
+    color: #0057A8; /* Color rojo */
 }
 
 /* ===========================================
