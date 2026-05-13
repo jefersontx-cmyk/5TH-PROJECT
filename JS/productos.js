@@ -4,47 +4,138 @@
    - Estructura para productos dinámicos
    =========================================== */
 
-const productos = { // Diccionario de productos accesibles por ID único
-    // Equipación
-    'camisola-pro': {
-        nombre: 'TX-Camisola Pro',
+const productos = { 
+
+/* Apartado de Equipacion AC */
+
+    'equipacion-gua': {
+        nombre: 'Selección de Guatemala',
         precio: 450.00,
-        descripcion: 'Camisola profesional de alto rendimiento con tecnología de absorción de sudor y diseño aerodinámico.',
+        descripcion: 'La equipacón oficial de la selección de Guatemala, referente al area de Concacaf',
         caracteristicas: [
-            'Tejido transpirable de alta calidad',
-            'Tecnología anti-humedad',
-            'Diseño ergonómico',
-            'Logo TX bordado',
-            'Disponible en colores negro y rojo'
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
         ],
-        cuidados: 'Lavar a máquina en agua fría, no usar blanqueador, secar al aire.',
+        cuidados: 'No lavar con agua caliente',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/equipacion-gua.jpeg',
         ],
         tallas: ['S', 'M', 'L', 'XL'],
         categoria: 'equipacion'
     },
 
-    'shorts-entrenamiento': {
-        nombre: 'TX-Shorts Entrenamiento',
-        precio: 280.00,
-        descripcion: 'Shorts cómodos y ligeros ideales para entrenamientos intensos y partidos.',
+    'equipacion-arg': {
+        nombre: 'Selección de Argentina',
+        precio: 450.00,
+        descripcion: 'La equipacón oficial de la selección de Argentina, actual campeona del mundo',
         caracteristicas: [
-            'Tejido ligero y flexible',
-            'Cintura elástica ajustable',
-            'Bolsillos internos',
-            'Logo TX en la pierna',
-            'Color negro con detalles rojos'
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
         ],
-        cuidados: 'Lavar a máquina en agua fría, no usar secadora.',
+        cuidados: 'No lavar con agua caliente',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/equipacion-arg.jpeg',
+        ],
+        tallas: ['S', 'M', 'L', 'XL'],
+        categoria: 'equipacion'
+    },
+
+    'equipacion-ale': {
+        nombre: 'Selección de Alemania',
+        precio: 450.00,
+        descripcion: 'La equipacón oficial de la selección de Alemana, la tetra campeona del mundo',
+        caracteristicas: [
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
+        ],
+        cuidados: 'No lavar con agua caliente',
+        imagenes: [
+            '../images/equipacion-ale.jpeg',
+        ],
+        tallas: ['S', 'M', 'L', 'XL'],
+        categoria: 'equipacion'
+    },
+    
+    'equipacion-por': {
+        nombre: 'Selección de Portugal',
+        precio: 450.00,
+        descripcion: 'La equipacón oficial de la selección de Portugal, candidata a campeonar el mundial',
+        caracteristicas: [
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
+        ],
+        cuidados: 'No lavar con agua caliente',
+        imagenes: [
+            '../images/equipacion-por.jpeg',
+        ],
+        tallas: ['S', 'M', 'L', 'XL'],
+        categoria: 'equipacion'
+    },
+
+    'equipacion-esp': {
+        nombre: 'Selección de España',
+        precio: 450.00,
+        descripcion: 'La equipacón oficial de la selección de España, la poderosa furia roja',
+        caracteristicas: [
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
+        ],
+        cuidados: 'No lavar con agua caliente',
+        imagenes: [
+            '../images/equipacion-esp.jpeg',
+        ],
+        tallas: ['S', 'M', 'L', 'XL'],
+        categoria: 'equipacion'
+    },
+    
+    'equipacion-fra': {
+        nombre: 'Selección de Francia',
+        precio: 450.00,
+        descripcion: 'La equipacón oficial de la selección de Francia, la elegante bicampeona',
+        caracteristicas: [
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
+        ],
+        cuidados: 'No lavar con agua caliente', 
+        imagenes: [
+            '../images/equipacion-fra.jpeg',
+        ],
+        tallas: ['S', 'M', 'L', 'XL'],
+        categoria: 'equipacion'
+    },
+
+    'equipacion-ita': {
+        nombre: 'Selección de Italia',
+        precio: 450.00,
+        descripcion: 'La equipacón oficial de la selección de Italia, la elegancia italiana nunca falla',
+        caracteristicas: [
+            'Material ligero',
+            'Tejido transpirable',
+            'Gestion de Humedad',
+            'Diseño profesional',
+            'Secado Rápido',
+        ],
+        cuidados: 'No lavar con agua caliente', 
+        imagenes: [
+            '../images/equipacion-ita.jpeg'
         ],
         tallas: ['S', 'M', 'L', 'XL'],
         categoria: 'equipacion'
@@ -271,50 +362,6 @@ const productos = { // Diccionario de productos accesibles por ID único
         ],
         tallas: ['Única'],
         categoria: 'accesorios'
-    },
-
-    'pelotas': {
-        nombre: 'TX-Pelotas Pro',
-        precio: 250.00,
-        descripcion: 'Pelotas de entrenamiento y partido para mejorar tu control en cada toque.',
-        caracteristicas: [
-            'Corte duradero',
-            'Buena retención de aire',
-            'Recomendado para césped sintético y natural',
-            'Diseño profesional',
-            'Fácil de manejar'
-        ],
-        cuidados: 'Inflar a la presión recomendada y limpiar con un paño húmedo.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['Única'],
-        categoria: 'equipacion'
-    },
-
-    'calcetines': {
-        nombre: 'TX-Calcetines Deportivos',
-        precio: 300.00,
-        descripcion: 'Calcetines de alto rendimiento con soporte cómodo para tus entrenamientos.',
-        caracteristicas: [
-            'Acolchado estratégico',
-            'Material transpirable',
-            'Ajuste reforzado en el talón',
-            'Diseño moderno',
-            'Ideal para uso diario'
-        ],
-        cuidados: 'Lavar a máquina con colores similares y secar al aire.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['S', 'M', 'L', 'XL'],
-        categoria: 'equipacion'
     },
 
     'tacos-cafes': {
