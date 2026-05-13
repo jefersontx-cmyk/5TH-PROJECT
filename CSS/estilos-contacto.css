@@ -10,6 +10,10 @@
     padding: 40px 20px; /* Espaciado interno vertical y horizontal */
     max-width: 1200px; /* Ancho máximo del contenido */
     margin: 0 auto; /* Centro el contenedor horizontalmente */
+    background: rgba(8, 12, 20, 0.96);
+    border: 1px solid rgba(0, 212, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.08);
 }
 
 /* Contenedor grid para información y formulario */
@@ -25,7 +29,7 @@
    =========================================== */
 
 .contacto-info h1 {
-    color: #0057A8; /* Color rojo de la marca */
+    color: #70d9ff; /* Color cian suavizado */
     font-size: 2.5rem; /* Tamaño grande para el título */
     margin-bottom: 20px; /* Espacio debajo del título */
 }
@@ -43,14 +47,14 @@
 }
 
 .info-item {
-    background: #003087; /* Fondo oscuro para cada bloque de contacto */
+    background: #101a25; /* Fondo oscuro para cada bloque de contacto */
     padding: 20px; /* Espaciado interno del bloque */
-    border-radius: 8px; /* Bordes redondeados suaves */
-    border-left: 4px solid #0057A8; /* Línea roja a la izquierda */
+    border-radius: 12px; /* Bordes redondeados suaves */
+    border-left: 4px solid rgba(0, 212, 255, 0.25); /* Línea cian suave a la izquierda */
 }
 
 .info-item h3 {
-    color: #0057A8; /* Títulos de sección en rojo */
+    color: #70d9ff; /* Títulos suaves en cian */
     margin-bottom: 10px; /* Espacio debajo del subtítulo */
     font-size: 1.2rem; /* Tamaño de subtítulo */
 }
@@ -66,7 +70,7 @@
    =========================================== */
 
 .contacto-formulario h2 {
-    color: #0057A8; /* Título del formulario en rojo */
+    color: #70d9ff; /* Título del formulario en azul suave */
     font-size: 2rem; /* Tamaño grande para el encabezado */
     margin-bottom: 20px; /* Espacio debajo del encabezado */
 }
@@ -87,9 +91,9 @@
 .form-grupo textarea {
     width: 100%; /* Ancho completo del campo */
     padding: 12px; /* Espacio interno del campo */
-    border: 2px solid #333; /* Borde gris oscuro */
+    border: 2px solid rgba(255,255,255,0.08); /* Borde suave */
     border-radius: 5px; /* Bordes redondeados suaves */
-    background: #003087; /* Fondo oscuro del campo */
+    background: #0e1621; /* Fondo oscuro del campo */
     color: #FFFFFF; /* Texto blanco */
     font-size: 1rem; /* Tamaño de fuente legible */
     transition: border-color 0.3s; /* Transición suave al enfocar */
@@ -99,7 +103,7 @@
 .form-grupo select:focus,
 .form-grupo textarea:focus {
     outline: none; /* Eliminar outline por defecto */
-    border-color: #0057A8; /* Resaltar borde en rojo */
+    border-color: rgba(0, 212, 255, 0.6); /* Resaltar borde en cian suave */
 }
 
 .form-grupo textarea {
@@ -122,7 +126,7 @@
     display: inline-block;
     background: transparent;
     color: #FFFFFF;
-    border: 2px solid #0057A8;
+    border: 2px solid rgba(0, 212, 255, 0.35);
     padding: 12px 22px;
     border-radius: 6px;
     text-decoration: none;
@@ -131,8 +135,8 @@
 }
 
 .btn-volver-inicio:hover {
-    background: #0057A8;
-    color: #FFFFFF;
+    background: rgba(0, 212, 255, 0.14);
+    color: #E5F8FF;
     transform: translateY(-1px);
 }
 
@@ -141,8 +145,8 @@
    =========================================== */
 
 .btn-enviar {
-    background: #0057A8; /* Fondo rojo principal */
-    color: white; /* Texto blanco */
+    background: #00a6c9; /* Fondo cian más suave */
+    color: #FFFFFF; /* Texto blanco */
     border: none; /* Sin borde */
     padding: 15px 30px; /* Espaciado interno del botón */
     font-size: 1.1rem; /* Tamaño de texto del botón */
@@ -153,7 +157,7 @@
 }
 
 .btn-enviar:hover {
-    background: #cc0000; /* Fondo más oscuro al pasar el cursor */
+    background: #0088a8; /* Fondo cian oscuro al pasar el cursor */
 }
 
 /* ===========================================

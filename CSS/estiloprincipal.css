@@ -4,6 +4,17 @@
    - Se aplican a toda la página completa
 ======================== */
 
+:root {
+    --bg: #080808;
+    --bg-surface: #101219;
+    --bg-surface-strong: #111111;
+    --accent: #00D4FF;
+    --accent-secondary: #0099BB;
+    --text: #E5F8FF;
+    --text-muted: #B3E7FF;
+    --border-soft: rgba(0, 212, 255, 0.18);
+}
+
 /* El asterisco (*) significa "aplica esto a TODO el HTML"
    Quitamos márgenes y rellenos que el navegador pone por defecto */
 * {
@@ -19,8 +30,9 @@ img {
 
 /* body es todo el cuerpo de la página */
 body {
-    background-color: #FFFFFF; /* Color de fondo oscuro */
-    color: #000000; /* Color de texto blanco */
+    background: radial-gradient(circle at top, rgba(0, 212, 255, 0.04), transparent 25%),
+                linear-gradient(180deg, var(--bg) 0%, #050505 100%);
+    color: var(--text); /* Texto claro sobre fondo oscuro */
     font-family: Arial, sans-serif; /* Fuente principal */
     animation: fadeIn 0.5s ease-in; /* Animación de entrada suave */
 }
@@ -54,7 +66,7 @@ body {
     display: none;
     cursor: pointer;
     font-size: 1.8rem;
-    color: white;
+    color: #E5F8FF;
     padding: 0.5rem 1rem;
     user-select: none;
 }
@@ -65,7 +77,7 @@ body {
     list-style: none;
     flex-direction: column;
     width: 260px;
-    background-color: #0A0A0A;
+    background-color: var(--bg-surface-strong);
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +85,7 @@ body {
     z-index: 9999;
     padding-top: 3rem;
     box-shadow: 4px 0 15px rgba(0,0,0,0.5);
-    border-right: 3px solid #0057A8;
+    border-right: 2px solid var(--border-soft);
     margin: 0;
 }
 
@@ -99,10 +111,10 @@ body {
 /* Links dentro del panel lateral */
 .menu-panel li a {
     display: block;
-    color: white;
+    color: #E5F8FF;
     text-decoration: none;
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.12);
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 2px;
@@ -112,7 +124,7 @@ body {
 
 /* Efecto hover en los links del panel */
 .menu-panel li a:hover {
-    color: #0057A8;
+    color: #00D4FF;
 }
 
 /* ========================
@@ -122,13 +134,13 @@ body {
 ======================== */
 
 .header {
-    background-color: #003087;         /* 🎨 CAMBIA AQUÍ el color del rectángulo */
+    background: linear-gradient(135deg, #0d1116 0%, #11181f 100%);
     width: 100%;                        /* Ocupa todo el ancho de la pantalla — no tocar */
     height: 120px;                      /* 📐 CAMBIA AQUÍ la altura del rectángulo (en px) */
     display: flex;                      /* Activa alineación flexible — no tocar */
     align-items: center;                /* Centra el contenido verticalmente — no tocar */
     justify-content: center;            /* Centra el contenido horizontalmente — no tocar */
-    border-bottom: 3px solid #0057A8;  /* 📏 CAMBIA AQUÍ el grosor y color de la línea roja */
+    border-bottom: 2px solid rgba(0, 212, 255, 0.35);  /* 📏 Línea de acento suave */
     overflow: hidden;                   /* Recorta lo que se salga del rectángulo — no tocar */
 }
 
@@ -138,6 +150,11 @@ body {
     width: auto;             /* El ancho se ajusta solo sin deformar la imagen — no tocar */
     max-height: none;        /* No limitar el logo aquí para que conserve su estilo original */
     object-fit: contain;     /* La imagen se adapta sin cortarse ni deformarse — no tocar */
+    filter: grayscale(0.25) brightness(1.3) contrast(1.1) hue-rotate(180deg) saturate(1.8);
+}
+
+.slogan-fondo img {
+    filter: grayscale(0.85) brightness(1.15) contrast(0.9) hue-rotate(180deg) saturate(1.4);
 }
 
 /* ========================
@@ -148,10 +165,10 @@ body {
 ======================== */
 
 .navbar {
-    background-color: #0A0A0A;         /* 🎨 CAMBIA AQUÍ el color de fondo de la barra de nav */
+    background: linear-gradient(180deg, #11151c 0%, #0c131a 100%);
     width: 100%;                        /* Ocupa todo el ancho — no tocar */
     padding: 0 40px;                   /* 📐 CAMBIA AQUÍ el espacio interno de la nav */
-    border-bottom: 3px solid #0057A8;  /* 📏 CAMBIA AQUÍ el grosor y color de la línea abajo */
+    border-bottom: 1px solid var(--border-soft);  /* 📏 Línea de acento secundario */
     display: flex;                      /* Pone elementos en fila — no tocar */
     align-items: center;                /* Centra verticalmente — no tocar */
     justify-content: space-between;    /* Separa el botón ☰ de los links — no tocar */
@@ -171,7 +188,7 @@ body {
 
 /* Cada link individual de la navegación */
 .nav-links a {
-    color: #fffffff8;          /* 🎨 CAMBIA AQUÍ el color de las letras del menú */
+    color: #E5F8FF;          /* 🎨 Letras del menú blanco claro */
     text-decoration: none;     /* Quita el subrayado — no tocar */
     font-size: 18px;           /* 📐 CAMBIA AQUÍ el tamaño de las letras del menú */
     letter-spacing: 2px;       /* 📐 CAMBIA AQUÍ el espacio entre letras del menú */
@@ -184,7 +201,7 @@ body {
 
 /* Efecto cuando el mouse pasa encima de un link */
 .nav-links a:hover {
-    color: #0057A8; /* 🎨 CAMBIA AQUÍ el color al pasar el mouse por encima */
+    color: #00D4FF; /* 🎨 Acento principal en hover */
 }
 
 /* ========================
@@ -201,10 +218,11 @@ body {
     justify-content: center;                   /* No tocar */
     padding: 80px 40px;                        /* 📐 CAMBIA AQUÍ el espacio interno de la sección */
     overflow: hidden;                          /* No tocar */
-    background-color: #ffffff4b;
-    background-image: url("images/fondo.png"); /* 🖼️ CAMBIA AQUÍ la ruta de tu imagen de fondo */
+    background: linear-gradient(180deg, rgba(8, 12, 18, 0.98), rgba(12, 18, 28, 0.95)),
+                url("images/fondo.png");
     background-size: cover;                    /* La imagen cubre toda la sección — no tocar */
     background-position: center;               /* La imagen se centra — no tocar */
+    background-blend-mode: multiply;
 }
 
 /* El TX gigante que se ve de fondo — es decorativo */
@@ -212,8 +230,8 @@ body {
     position: absolute;    /* No tocar */
     font-size: 300px;      /* 📐 CAMBIA AQUÍ el tamaño del TX decorativo de fondo */
     font-weight: 900;      /* No tocar */
-    color: #4972a7;        /* 🎨 CAMBIA AQUÍ el color del TX decorativo de fondo */
-    opacity: 0.10;         /* 👁️ CAMBIA AQUÍ la transparencia (0=invisible, 1=sólido) */
+    color: #0099BB;        /* 🎨 Acento secundario para el TX decorativo */
+    opacity: 0.08;         /* 👁️ Cambiar la transparencia para menor contraste */
     letter-spacing: -10px; /* No tocar */
     user-select: none;     /* No tocar */
     pointer-events: none;  /* No tocar */
@@ -234,17 +252,25 @@ body {
     text-transform: uppercase; /* Convierte a mayúsculas — no tocar */
     line-height: 1.2;          /* No tocar */
     margin-bottom: 24px;       /* 📐 CAMBIA AQUÍ el espacio entre el título y el párrafo */
+    color: #E5F8FF;
 }
 
-/* La palabra resaltada en rojo */
 .slogan-contenido h1 span {
-    color: #0057A8; /* 🎨 CAMBIA AQUÍ el color de la palabra resaltada */
+    display: inline-block;
+}
+
+.slogan-contenido h1 .accent-primary {
+    color: #00D4FF;
+}
+
+.slogan-contenido h1 .accent-secondary {
+    color: #0099BB;
 }
 
 /* El párrafo debajo del título */
-.slogan-contenido p {
+.slogan-text {
     font-size: 18px;     /* 📐 CAMBIA AQUÍ el tamaño del párrafo */
-    color: #C0C0C0;      /* 🎨 CAMBIA AQUÍ el color del párrafo */
+    color: #B3E7FF;      /* 🎨 Color suave para el texto secundario */
     letter-spacing: 2px; /* 📐 CAMBIA AQUÍ el espacio entre letras del párrafo */
     font-style: italic;  /* Cursiva — cámbialo a "normal" si no quieres cursiva */
 }
@@ -256,8 +282,8 @@ body {
 ======================== */
 
 .footer {
-    background-color: #003087;     /* 🎨 CAMBIA AQUÍ el color de fondo del footer */
-    border-top: 3px solid #0057A8; /* 📏 CAMBIA AQUÍ el grosor y color de la línea roja arriba */
+    background: var(--bg-surface);
+    border-top: 2px solid rgba(0, 212, 255, 0.35); /* 📏 Línea de acento principal */
     padding: 30px 40px;            /* 📐 CAMBIA AQUÍ el espacio interno del footer */
     text-align: center;            /* No tocar */
     display: flex;                 /* No tocar */
@@ -268,7 +294,7 @@ body {
 /* Texto de derechos reservados */
 .footer-derechos {
     font-size: 13px;     /* 📐 CAMBIA AQUÍ el tamaño del texto de derechos */
-    color: #888888;      /* 🎨 CAMBIA AQUÍ el color del texto de derechos */
+    color: #B3E7FF;      /* 🎨 Color claro para el texto del pie */
     letter-spacing: 1px; /* No tocar */
 }
 
@@ -281,7 +307,7 @@ body {
 
 /* Cada link de red social */
 .footer-redes a {
-    color: #FFFFFF;            /* 🎨 CAMBIA AQUÍ el color de los links de redes */
+    color: #E5F8FF;            /* 🎨 Color de los links de redes */
     text-decoration: none;     /* No tocar */
     font-size: 13px;           /* 📐 CAMBIA AQUÍ el tamaño de los links de redes */
     letter-spacing: 2px;       /* No tocar */
@@ -291,7 +317,7 @@ body {
 
 /* Efecto hover en las redes sociales */
 .footer-redes a:hover {
-    color: #0057A8; /* 🎨 CAMBIA AQUÍ el color al pasar el mouse por las redes */
+    color: #00D4FF; /* 🎨 Hover con acento principal */
 }
 
 /* ========================
@@ -401,8 +427,8 @@ body {
     position: fixed; /* Posición fija en la esquina superior derecha */
     top: 20px; /* Distancia desde arriba */
     right: 20px; /* Distancia desde la derecha */
-    background: #0057A8; /* Fondo rojo de la marca */
-    color: white; /* Texto blanco */
+    background: #00D4FF; /* Fondo acento principal */
+    color: #080808; /* Texto oscuro sobre acento claro */
     padding: 15px; /* Espaciado interno */
     border-radius: 50px; /* Bordes completamente redondeados */
     cursor: pointer; /* Cursor de mano al pasar */
@@ -448,8 +474,8 @@ body {
 }
 
 .carrito-contador {
-    background: white; /* Fondo blanco para el número */
-    color: #0057A8; /* Texto rojo */
+    background: #00D4FF; /* Fondo acento principal */
+    color: #080808; /* Texto oscuro para contraste */
     border-radius: 50%; /* Forma circular */
     width: 25px; /* Ancho del círculo */
     height: 25px; /* Alto del círculo */
@@ -475,7 +501,7 @@ body {
 }
 
 .modal-contenido {
-    background: #003087; /* Fondo gris oscuro como el sitio */
+    background: var(--bg-surface-strong); /* Fondo carbono oscuro */
     padding: 30px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
     max-width: 500px; /* Ancho máximo */
@@ -507,7 +533,7 @@ body {
     float: right; /* Botón de cerrar a la derecha */
     font-size: 2rem; /* Tamaño grande */
     cursor: pointer; /* Cursor de mano */
-    color: #0057A8; /* Color rojo */
+    color: #00D4FF; /* Color de acento principal */
 }
 
 .item-carrito {
@@ -515,13 +541,13 @@ body {
     justify-content: space-between; /* Espaciado entre imagen/info y botón eliminar */
     align-items: center; /* Centrado vertical */
     padding: 15px 0; /* Espaciado vertical */
-    border-bottom: 1px solid #333; /* Línea separadora */
+    border-bottom: 1px solid rgba(0, 212, 255, 0.15); /* Línea separadora */
 }
 
 .total-carrito {
     font-size: 1.5rem; /* Tamaño grande para resaltar */
     font-weight: bold; /* Texto en negrita */
-    color: #0057A8; /* Color rojo de la marca */
+    color: #00D4FF; /* Color de acento principal */
     text-align: center; /* Centrado */
     margin: 20px 0; /* Margen vertical */
 }
