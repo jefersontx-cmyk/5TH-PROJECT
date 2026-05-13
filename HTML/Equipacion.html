@@ -54,7 +54,7 @@
         <header>
         <h2>Equipación</h2>
         <p id="descripcion">
-            Todo lo que necesites para demostrar que eres el mejor. 
+            La armadura que cualquier guerrero necesita para la batalla 
         </p>
         </header>
 
@@ -63,13 +63,13 @@
 
             <article class="producto">
                 <div>
-                    <img src="../images/placeholder.png" alt="balones">
+                    <img src="../images/placeholder.png" alt="Guatemala">
                 </div>
                 <div class="informacion">
-                    <h3>Pelotas</h3>
-                    <p>Lo necesario para tener el control</p>
+                    <h3>Guatemala</h3>
+                    <p>La armadura de los soldados de maiz</p>
                     <div class="precio">
-                        <p class="dinero">A solo: Q.250.00</p>
+                        <p class="dinero">A solo: Q.450.00</p>
                     </div>
                     <button class="btn-ver-producto" onclick="window.location.href='producto.html?id=pelotas'">Ver Producto</button>
                 </div>
@@ -126,6 +126,12 @@
             ← Volver Atrás
         </a>
     </div>
+
+<!-- Solucionando el bug insano de el carrito /AC/ -->
+ <div class="carrito-flotante" onclick="mostrarCarrito()">
+        🛒 <span class="carrito-contador" id="carrito-contador">0</span>
+    </div>
+
 
     <footer class="footer">
         <p class="footer-derechos">
