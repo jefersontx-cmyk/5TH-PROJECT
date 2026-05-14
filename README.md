@@ -110,17 +110,6 @@ La página web presenta una experiencia visual inspirada en marcas deportivas pr
 
 ---
 
-## 📈 **Próximas Mejoras Planificadas**
-
-- [ ] **Sistema de usuarios**: Login/registro con perfiles personales
-- [ ] **Pasarela de pagos**: Integración con métodos de pago reales
-- [ ] **Inventario dinámico**: Gestión de stock en tiempo real
-- [ ] **Reviews de productos**: Sistema de calificaciones y comentarios
-- [ ] **Búsqueda avanzada**: Filtros por precio, talla, categoría
-- [ ] **Newsletter**: Suscripción a ofertas y novedades
-- [ ] **App PWA**: Versión instalable como aplicación móvil
-
-
 ## ⚽ Enfoque Principal
 
 El elemento central del proyecto son los zapatos de fútbol, representados como el producto más importante de la marca TX.  
