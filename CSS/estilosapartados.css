@@ -1,13 +1,12 @@
-/* ========================
-   CATALOGO
-======================== */
-/* Contenedor principal del catálogo de productos */
+/*
+    Estilos Apartados - Aca van todas las pestañas que usamos xd
+*/
+
 .catalogo {
-    display: grid; /* Usa CSS Grid */
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales en desktop */
-    gap: 30px; /* Espacio entre elementos */
-    padding: 20px; /* Espaciado interno */
-    max-width: 1200px; /* Ancho máximo */
+    display: grid; 
+    gap: 30px;            /* Espacio entre elementos */
+    padding: 20px;        /* Espaciado interno */
+    max-width: 1200px;    
     margin: 0 auto; /* Centrado automático */
 }
 
@@ -52,7 +51,7 @@
 /* Contenedor de información del producto */
 .informacion {
     padding: 20px; /* Espaciado interno */
-    background-color: #a09595; /* Fondo gris */
+    background-color: #90a9b8; /* Fondo gris */
     flex-grow: 1; /* Ocupa espacio disponible */
     display: flex; /* Flexbox */
     flex-direction: column; /* Elementos en columna */
@@ -62,7 +61,7 @@
 
 /* Cambio de color de fondo al pasar el mouse sobre el producto */
 .producto:hover .informacion {
-    background-color: #d19a9a; /* Fondo rosado */
+    background-color: #9aadd1; /* Fondo rosado */
 }
 
 /* Títulos de los productos */
@@ -108,7 +107,7 @@
 }
 
 .btn-ver-producto:hover {
-    background: #cc0000; /* Fondo más oscuro al pasar mouse */
+    background: #0011ff; /* Fondo más oscuro al pasar mouse */
 }
 
 /* ========================
@@ -124,7 +123,7 @@
 #intro h2 {
     font-family: 'Arial Black', sans-serif;
     font-size: 3rem;
-    color: #000000;
+    color: #bbd2e7;
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: -1px;
@@ -137,7 +136,7 @@
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #e63946;
+    background-color: #006eff;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -150,7 +149,7 @@
 }
 
 /* ========================
-   RESPONSIVE CATÁLOGO
+   ¨Para el responsivo tilin
 ======================== */
 
 /* TABLET */
