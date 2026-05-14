@@ -296,52 +296,9 @@ const productos = {
     },
 
     // Accesorios
-    'mochila-entrenamiento': {
-        nombre: 'TX-Mochila Entrenamiento',
-        precio: 320.00,
-        descripcion: 'Mochila resistente y funcional para llevar todo tu equipo de entrenamiento.',
-        caracteristicas: [
-            'Múltiples compartimentos',
-            'Material impermeable',
-            'Correas acolchadas',
-            'Logo TX grande',
-            'Capacidad de 30L'
-        ],
-        cuidados: 'Limpiar con paño húmedo, no lavar en máquina.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['Única'],
-        categoria: 'accesorios'
-    },
-
-    'botella-agua': {
-        nombre: 'TX-Botella Agua Pachón',
-        precio: 50.00,
-        descripcion: 'Botella ergonómica con diseño TX para mantenerte hidratado durante el entrenamiento.',
-        caracteristicas: [
-            'Capacidad de 750ml',
-            'Material BPA-free',
-            'Tapa a prueba de fugas',
-            'Diseño ergonómico',
-            'Logo TX grabado'
-        ],
-        cuidados: 'Lavar con agua y jabón, no usar en microondas.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['Única'],
-        categoria: 'accesorios'
-    },
 
     'rodilleras': {
-        nombre: 'TX-Rodilleras Pro',
+        nombre: 'Rodilleras',
         precio: 99.00,
         descripcion: 'Rodilleras de protección que te dan el flow perfecto para tus movimientos.',
         caracteristicas: [
@@ -353,17 +310,74 @@ const productos = {
         ],
         cuidados: 'Lavar a mano con agua fría, secar al aire.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/accesorios1.png',
+
         ],
         tallas: ['S', 'M', 'L', 'XL'],
         categoria: 'accesorios'
     },
 
+
+    'pachon': {
+        nombre: 'Pachon',
+        precio: 50.00,
+        descripcion: 'Todo lo necesario para que te mantengas lo mas hidratado posible en los entrenamientos',
+        caracteristicas: [
+            'Resistente a golpes',
+            'Mantiene temperatura',
+            'Facil de Transportar',
+            'Logo TX grande',
+            'Capacidad de 1.5L'
+        ],
+        cuidados: 'no llenar con materiales arriba de los 80C.',
+        imagenes: [
+            '../images/accesorios2.png',
+        ],
+        tallas: ['Única'],
+        categoria: 'accesorios'
+    },
+
+    'mochila-deportiva': {
+        nombre: 'Mochila Tipo TX',
+        precio: 150.00,
+        descripcion: 'El almacenamiento nunca se te acabara cuando andes entrenando.',
+        caracteristicas: [
+            'Resistente al peso',
+            'Con materiales impermeables',
+            'Ligera',
+            'Duradera',
+            'Logo TX grabado'
+        ],
+        cuidados: 'No lavar con agua caliente',
+        imagenes: [
+            '../images/accesorios3.png',
+
+        ],
+        tallas: ['Única'],
+        categoria: 'accesorios'
+    },
+
+    'mochila-no-deportiva': {
+        nombre: 'Mochila Tipo Wave',
+        precio: 180.00,
+        descripcion: 'La mochila para que nunca te haga falta el espacio donde quiera que vayas',
+        caracteristicas: [
+            'Diseño resistente',
+            'Material impermeable',
+            'Logo TX visible',
+            'Ligero y durable',
+        ],
+        cuidados: 'No lavar con agua.',
+        imagenes: [
+            '../images/accesorios4.png',
+
+        ],
+        tallas: ['Única'],
+        categoria: 'accesorios'
+    },
+    
     'muñequera': {
-        nombre: 'TX-Muñequera Deportiva',
+        nombre: 'Muñequera',
         precio: 80.00,
         descripcion: 'Muñequera que potencia tus manos y mejora tu rendimiento en cada movimiento.',
         caracteristicas: [
@@ -375,80 +389,12 @@ const productos = {
         ],
         cuidados: 'Lavar a máquina en ciclo delicado.',
         imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
+            '../images/accesorios5.png',
+
         ],
         tallas: ['Única'],
         categoria: 'accesorios'
     },
-
-    'tacos-cafes': {
-        nombre: 'TX-Tacos Cafés',
-        precio: 300.00,
-        descripcion: 'Tacos clásicos cafés para destacar tu estilo en cada partido.',
-        caracteristicas: [
-            'Agarre confiable',
-            'Material sintético duradero',
-            'Diseño elegante',
-            'Cómodos en espacios largos',
-            'Buena amortiguación'
-        ],
-        cuidados: 'Limpiar con un paño húmedo después de cada uso.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['39', '40', '41', '42', '43', '44'],
-        categoria: 'tacos'
-    },
-
-    'llavero-energetico': {
-        nombre: 'TX-Llavero Energético',
-        precio: 30.00,
-        descripcion: 'Llavero deportivo con estilo TX para llevar contigo toda la energía.',
-        caracteristicas: [
-            'Diseño pequeño y resistente',
-            'Material metálico',
-            'Logo TX visible',
-            'Ligero y durable',
-            'Perfecto para regalar'
-        ],
-        cuidados: 'Limpiar con un paño seco.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['Única'],
-        categoria: 'accesorios'
-    },
-
-    'reloj-tx': {
-        nombre: 'TX-Reloj Deportivo',
-        precio: 99.00,
-        descripcion: 'Reloj deportivo con estilo moderno para acompañarte en cada entrenamiento.',
-        caracteristicas: [
-            'Correa ajustable',
-            'Esfera resistente',
-            'Diseño deportivo',
-            'Ligero y cómodo',
-            'Fácil de leer'
-        ],
-        cuidados: 'Limpia con un paño suave y evita el contacto con agua excesiva.',
-        imagenes: [
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png',
-            '../images/placeholder.png'
-        ],
-        tallas: ['Única'],
-        categoria: 'accesorios'
-    }
 };
 
 // Función para obtener producto por ID
