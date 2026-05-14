@@ -227,43 +227,6 @@
             document.querySelector('.selector-tallas').style.display = 'none';
         }
 
-        // Función para cargar productos relacionados
-        function cargarProductosRelacionados(categoria, productoActualId) {
-            const productosRelacionados = obtenerProductosPorCategoria(categoria)
-                .filter(producto => producto !== obtenerProducto(productoActualId))
-                .slice(0, 3); // Máximo 3 productos relacionados
-
-            const contenedor = document.getElementById('productos-relacionados');
-            contenedor.innerHTML = '';
-
-            if (productosRelacionados.length === 0) {
-                contenedor.innerHTML = '<p>No hay productos relacionados disponibles.</p>';
-                return;
-            }
-
-            productosRelacionados.forEach(producto => {
-                const productoId = Object.keys(productos).find(key => productos[key] === producto);
-                const article = document.createElement('article');
-                article.className = 'producto';
-
-                article.innerHTML = `
-                    <div>
-                        <img src="${producto.imagenes[0]}" alt="${producto.nombre}">
-                    </div>
-                    <div class="informacion">
-                        <h3>${producto.nombre}</h3>
-                        <p>${producto.descripcion.substring(0, 60)}...</p>
-                        <div class="precio">
-                            <p class="dinero">Q.${producto.precio.toFixed(2)}</p>
-                        </div>
-                        <button class="btn-ver-producto" onclick="window.location.href='producto.html?id=${productoId}'">Ver Producto</button>
-                    </div>
-                `;
-
-                contenedor.appendChild(article);
-            });
-        }
-
         // Función para agregar producto al carrito (versión actualizada)
         function agregarProductoAlCarrito() {
             if (!productoActual) {
