@@ -256,6 +256,25 @@ const productos = {
         categoria: 'tacos'
     },
 
+    'sonic-wave': {
+        nombre: 'Sonic Wave',
+        precio: 650.00,
+        descripcion: 'Rápidos como el sonido, con el ritmo que necesitas.',
+        caracteristicas: [
+            'Colores vibrantes',
+            'Extremadamente ligeros',
+            'Material resistente',
+            'Diseño moderno y llamativo',
+            'Ideal para los partidos pesados'
+        ],
+        cuidados: 'Limpiar con cuidado para mantener los colores vibrantes.',
+        imagenes: [
+            '../images/tacos7.png',
+        ],
+        tallas: ['39', '40', '41', '42', '43', '44'],
+        categoria: 'tacos'
+    },
+
     // Velocity
     'classic': {
         nombre: 'Classic',

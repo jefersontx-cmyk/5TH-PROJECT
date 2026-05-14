@@ -11,20 +11,16 @@
     margin: 0 auto; /* Centrado automático */
 }
 
-/* Grid de 4 columnas para todas las páginas de catálogo */
-.cata-tacos {
-    grid-template-columns: repeat(3, 1fr);
-}
+/* Apartado de las columnas /AC/ */
 .cata-accesorios {
     grid-template-columns: repeat(3, 1fr)
 }
 .cata-velocity{
     grid-template-columns: repeat(2, 1fr)
 }
-.cata-equipacion {
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+.cata-tacos, .cata-equipacion {
+    grid-template-columns: repeat(4, 1fr); 
 }
-
 /* ========================
    PRODUCTO
 ======================== */
